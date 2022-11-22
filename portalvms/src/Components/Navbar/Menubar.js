@@ -55,7 +55,7 @@ const Menubar = () => {
             </Nav>
             <Nav >
               <Nav.Link href="#deets"></Nav.Link>
-              {/* <Nav.Link className=""> */}
+              
                 <div className="d-flex justify-content-center align-items-center m-0 p-2 login-signup-main-div">
                   <div className="link-div">
                     <Link
@@ -83,7 +83,7 @@ const Menubar = () => {
                     </Link>
                   </div>
                 </div>
-              {/* </Nav.Link> */}
+              
             </Nav>
           </Navbar.Collapse>
         </Container>
