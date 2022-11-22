@@ -1,0 +1,49 @@
+.login-signup-main-div{
+    border: 2px solid #794afa;
+    border-radius: 3px;
+    /* height: 40px; */
+}
+.login-signup-main-div:hover{
+    background-color: #794afa;
+    color: white !important;
+}
+.login-h6-tag:hover{
+    color: white;
+}
+
+
+.main-Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    
+}
+ /* h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(73, 125, 223));
+    -webkit-background-clip: text;
+    text-decoration: none;
+    -webkit-text-fill-color: transparent;
+  }
+h4 span{
+    font-size: 3.5rem;
+    color: -webkit-linear-gradient(rgb(0, 0, 0), rgb(73, 125, 223));
+  } */
+  
+
+  .menubar-tag-h4{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(rgb(0, 0, 0), #7f61d3);
+    -webkit-background-clip: text;
+    text-decoration: none;
+    -webkit-text-fill-color: transparent;
+  }
+.menubar-tag-h4 span{
+    font-size: 2rem;
+  }
+
