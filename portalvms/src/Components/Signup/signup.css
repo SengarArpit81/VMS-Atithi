@@ -4,9 +4,77 @@
     padding: 20px;
     box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
 }
+.Signup-heading-tag-h4{
+    color: #720c27;
+    font-weight: 700;
+}
+.secod-col-input-box{
+    width: 96%;
+    height: 36px;
+    float: right;
+    
+}
+.company-col-input-box{
+    width: 100%;
+    height: 36px;
+}
+.form-error{
+    color: red;
+
+}
+.form-error-col-p-tag{
+    margin-left: 10px;
+}
+.Password-criteria-tag-h6{
+    font-weight: 600;
+    color: black;
+}
+.Signup-Button{
+    background-color: #720c27;
+    color: white;
+    height: 44px;
+    font-size: 20px;
+    border: none;
+    font-weight: 500;
+    border-radius: 20px;
+}
+.Signup-Button:hover{
+    background-color: #720c27;
+}
 
 @media (max-width:600px) {
     .SignupImage-Div{
         display: none;
+    }
+    .Signup-heading-tag-h4{
+        color: #720c27;
+        font-weight: 700;
+        font-size: 21px;
+    }
+    .second-main-Col{
+        margin-top: 15px !important;
+    }
+    .secod-col-input-box{
+        float: left;
+    }
+    .company-col-input-box{
+        width: 96%;
+    }
+    .form-error-col-p-tag{
+        margin-left: 0px !important;
+    }
+    .sign-tag-h6{
+        font-size: 14px;
+    }
+    .Password-criteria-tag-h6{
+        font-size: 13px;
+        font-weight: 600 !important;
+
+    }
+    .Password-criteria-tag-li span{
+        font-size: 11px;
+        font-weight: 600;
+        
+
     }
 }
