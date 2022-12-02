@@ -3,35 +3,33 @@ import React from "react";
 import Button from "react-bootstrap/esm/Button";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-import {useFormik} from "formik";
+import { useFormik } from "formik";
 import "./signup.css";
 import { signupSchema } from "../Validation/Validation";
 
 const initialValues = {
-  first_Name:"",
-  last_Name:"",
-  phone_number:"",
-  email:"",
-  company_name:"",
-  password:"",
-  confirm_password:""
-
-}
+  first_Name: "",
+  last_Name: "",
+  phone_number: "",
+  email: "",
+  company_name: "",
+  password: "",
+  confirm_password: "",
+};
 
 const Signup = () => {
-
-   const {values, errors,touched, handleBlur, handleChange, handleSubmit} = useFormik({
-    initialValues: initialValues,
-    validationSchema:signupSchema,
-    onSubmit: (values, action)=>{
+  const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
+    useFormik({
+      initialValues: initialValues,
+      validationSchema: signupSchema,
+      onSubmit: (values, action) => {
         action.resetForm();
-       console.log("Formik value",values)
-    },
-
-   })
+        console.log("Formik value", values);
+      },
+    });
 
   //  console.log("Formik value",errors)
-
+  // https://www.youtube.com/watch?v=uq_bzHuRD9g 
   return (
     <div>
       <Row>
@@ -60,176 +58,305 @@ const Signup = () => {
               className="signup-main-div"
             >
               <div className="p-2">
-                <div>
-                  <h4>SIGNUP ATHITHI BOOK</h4>
+                <div className="d-flex justify-content-center align-items-center ">
+                  <h4 className="Signup-heading-tag-h4 ">SIGNUP ATHITHI BOOK</h4>
                 </div>
                 <form onSubmit={handleSubmit}>
-                  <div className="d-flex justify-content-between align-items-center w-100">
-                    <div className="mt-3 w-100">
-                      {/* <Form.Control
-                        type="text"
-                        placeholder="First Name"
-                        style={{ width: "96%" }}
-                      /> */}
-                      <input 
-                      type="text" 
-                      placeholder="First Name"
-                      name="first_Name"
-                      autoComplete="off"
-                      value={values.first_Name}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      style={{ width: "96%",height:"36px" }}
-                      />
-                      {errors.first_Name && touched.first_Name? ( <p className="form-error" style={{color:"red"}}>{errors.first_Name}</p>):null}
-                    </div>
-                    <div className="mt-3 w-100 ">
-                      {/* <Form.Control
-                        type="text"
-                        placeholder="Last Name"
-                        style={{ width: "96%", float: "right" }}
-                      /> */}
-                       <input 
-                      type="text" 
-                      placeholder="Last Name"
-                      name="last_Name"
-                      autoComplete="off"
-                      value={values.last_Name}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      style={{ width: "96%",height:"36px",float: "right" }}
-                      />
-                      {errors.last_Name && touched.last_Name? ( <p className="form-error" style={{color:"red"}}>{errors.last_Name}</p>):null}
-                    </div>
-                  </div>
-                  <div className="d-flex justify-content-between align-items-center w-100">
-                    <div className="mt-3 w-100">
-                      {/* <Form.Control
-                        type="text"
-                        placeholder="Phone Number"
-                        style={{ width: "96%" }}
-                      /> */}
-                      <input 
-                      type="text" 
-                      placeholder="Pnone Number"
-                      name="phone_number"
-                      autoComplete="off"
-                      value={values.phone_number}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      style={{ width: "96%",height:"36px" }}
-                      />
-                      {errors.phone_number && touched.phone_number? ( <p className="form-error" style={{color:"red"}}>{errors.phone_number}</p>):null}
-                    </div>
-                    <div className="mt-3 w-100">
-                      {/* <Form.Control
-                        type="email"
-                        placeholder="Email"
-                        style={{ width: "96%", float: "right" }}
-                      /> */}
-                      <input 
-                      type="email" 
-                      placeholder="Email"
-                      name="email"
-                      autoComplete="off"
-                      value={values.email}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      style={{ width: "96%",height:"36px",float: "right" }}
-                      />
-                      {errors.email && touched.email? ( <p className="form-error" style={{color:"red"}}>{errors.email}</p>):null}
+                  <Row>
+                    <Col
+                      span={24}
+                      className="mt-3 w-100 d-flex"
+                    >
+                      <Row className="w-100">
+                        <Col
+                          span={12}
+                          xs={24}
+                          sm={24}
+                          md={12}
+                          lg={12}
+                          // style={{ border: "1px solid red" }}
+                        >
+                          <Row>
+                            <Col span={24} style={{ flexDirection: "column" }}>
+                              <input
+                                type="text"
+                                placeholder="First Name"
+                                name="first_Name"
+                                autoComplete="off"
+                                value={values.first_Name}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                style={{ width: "96%", height: "36px" }}
+                              />
+                            </Col>
+                            <Col style={{height:"20px"}}>
+                              {errors.first_Name && touched.first_Name ? (
+                                <p
+                                  className="form-error"
+                                
+                                >
+                                  {errors.first_Name}
+                                </p>
+                              ) : null}
+                            </Col>
+                          </Row>
+                        </Col>
+                        <Col span={12} xs={24} sm={24} md={12} lg={12} className="second-main-Col">
+                          <Row>
+                            <Col span={24} style={{ flexDirection: "column" }}>
+                              <input
+                                type="text"
+                                placeholder="Last Name"
+                                name="last_Name"
+                                autoComplete="off"
+                                value={values.last_Name}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                className="secod-col-input-box"
+                               
+                              />
+                            </Col>
+                            <Col style={{height:"20px"}}>
+                              {errors.last_Name && touched.last_Name ? (
+                                <p
+                                  className="form-error form-error-col-p-tag"
+                                >
+                                  {errors.last_Name}
+                                </p>
+                              ) : null}
+                            </Col>
+                          </Row>
+                        </Col>
+                      </Row>
 
-                    </div>
-                  </div>
+                      
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col
+                      span={24}
+                      className="mt-3 w-100 d-flex"
+                    >
+                      <Row className="w-100">
+                        <Col
+                          span={12}
+                          xs={24}
+                          sm={24}
+                          md={12}
+                          lg={12}
+                          // style={{ border: "1px solid red" }}
+                        >
+                          <Row>
+                            <Col span={24} style={{ flexDirection: "column" }}>
+                              <input
+                                type="text"
+                                placeholder="Pnone Number"
+                                name="phone_number"
+                                autoComplete="off"
+                                value={values.phone_number}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                style={{ width: "96%", height: "36px" }}
+                              />
+                            </Col>
+                            <Col style={{height:"20px"}}>
+                              {errors.phone_number && touched.phone_number ? (
+                                <p
+                                  className="form-error"
+                                
+                                >
+                                  {errors.phone_number}
+                                </p>
+                              ) : null}
+                            </Col>
+                          </Row>
+                        </Col>
+                        <Col span={12} xs={24} sm={24} md={12} lg={12} className="second-main-Col">
+                          <Row>
+                            <Col span={24} style={{ flexDirection: "column" }}>
+                              <input
+                                type="email"
+                                placeholder="Enter email id"
+                                name="email"
+                                autoComplete="off"
+                                value={values.email}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                className="secod-col-input-box"
+                              />
+                            </Col>
+                            <Col style={{height:"20px"}}>
+                              {errors.email && touched.email ? (
+                                <p
+                                  
+                                  className="form-error form-error-col-p-tag"
+                                >
+                                  {errors.email}
+                                </p>
+                              ) : null}
+                            </Col>
+                          </Row>
+                        </Col>
+                      </Row>
+
+                      
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col
+                      span={24}
+                      className="mt-3 w-100 d-flex"
+                    >
+                      <Row className="w-100">
+                        <Col
+                          span={24}
+                          xs={24}
+                          sm={24}
+                          md={24}
+                          lg={24}
+                          // style={{ border: "1px solid red" }}
+                        >
+                          <Row>
+                            <Col span={24} style={{ flexDirection: "column" }}>
+                              <input
+                                type="text"
+                                placeholder="Enter company name"
+                                name="company_name"
+                                autoComplete="off"
+                                value={values.company_name}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                className="company-col-input-box"
+                              />
+                            </Col>
+                            <Col style={{height:"20px"}}>
+                              {errors.company_name && touched.company_name ? (
+                                <p
+                                  className="form-error"
+                                  
+                                >
+                                  {errors.company_name}
+                                </p>
+                              ) : null}
+                            </Col>
+                          </Row>
+                        </Col>
+                       
+                      </Row>
+
+                      
+                    </Col>
+                  </Row>
+
+                  <Row>
+                    <Col
+                      span={24}
+                      className="mt-3 w-100 d-flex"
+                    >
+                      <Row className="w-100">
+                        <Col
+                          span={12}
+                          xs={24}
+                          sm={24}
+                          md={12}
+                          lg={12}
+                          // style={{ border: "1px solid red" }}
+                        >
+                          <Row>
+                            <Col span={24} style={{ flexDirection: "column" }}>
+                              <input
+                                type="password"
+                                placeholder="Enter password"
+                                name="password"
+                                autoComplete="off"
+                                value={values.password}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                style={{ width: "96%", height: "36px" }}
+                              />
+                            </Col>
+                            <Col style={{height:"20px"}}>
+                              {errors.password && touched.password ? (
+                                <p
+                                  className="form-error"
+                              
+                                >
+                                  {errors.password}
+                                </p>
+                              ) : null}
+                            </Col>
+                          </Row>
+                        </Col>
+                        <Col span={12} xs={24} sm={24} md={12} lg={12} className="second-main-Col">
+                          <Row>
+                            <Col span={24} style={{ flexDirection: "column" }}>
+                              <input
+                                type="password"
+                                placeholder="Re-Enter Password"
+                                name="confirm_password"
+                                autoComplete="off"
+                                value={values.confirm_password}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                className="secod-col-input-box"
+                              />
+                            </Col>
+                            <Col style={{height:"20px"}}>
+                              {errors.confirm_password && touched.confirm_password ? (
+                                <p
+                                className="form-error form-error-col-p-tag"
+                                >
+                                  {errors.confirm_password}
+                                </p>
+                              ) : null}
+                            </Col>
+                          </Row>
+                        </Col>
+                      </Row>
+
+                      
+                    </Col>
+                  </Row>
+                  
+
                   <div className="mt-3">
-                    {/* <Form.Control type="text" placeholder="Comapnay Name" /> */}
-                    <input 
-                      type="text" 
-                      placeholder="Company Name"
-                      name="company_name"
-                      autoComplete="off"
-                      value={values.company_name}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      style={{ width: "100%",height:"36px"}}
-                      />
-                      {errors.company_name && touched.company_name? ( <p className="form-error" style={{color:"red"}}>{errors.company_name}</p>):null}
-
-                  </div>
-                  <div className="d-flex justify-content-between align-items-center w-100">
-                    <div className="mt-3 w-100">
-                      {/* <Form.Control
-                        type="password"
-                        placeholder="Re-Enter Password"
-                        style={{ width: "96%" }}
-                      /> */}
-                      <input 
-                      type="password" 
-                      placeholder="Password"
-                      name="password"
-                      autoComplete="off"
-                      value={values.password}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      style={{ width: "96%",height:"36px"}}
-                      />
-                      {errors.password && touched.password? ( <p className="form-error" style={{color:"red"}}>{errors.password}</p>):null}
-
-                    </div>
-                    <div className="mt-3 w-100">
-                      {/* <Form.Control
-                        type="password"
-                        placeholder="Re-Enter Passward"
-                        style={{ width: "96%", float: "right" }}
-                      /> */}
-                      <input 
-                      type="password" 
-                      placeholder="Re-Enter Passward"
-                      name="confirm_password"
-                      autoComplete="off"
-                      value={values.confirm_password}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      style={{ width: "96%",height:"36px",float: "right" }}
-                      />
-                      {errors.confirm_password && touched.confirm_password? ( <p className="form-error" style={{color:"red"}}>{errors.confirm_password}</p>):null}
-
-                    </div>
-                  </div>
-
-                  <div className="mt-3">
-                    <h6>Password must match below criteria:</h6>
+                    <h6 className="Password-criteria-tag-h6 ">Password must match below criteria:</h6>
                     <ul>
-                      <li>Must have minimum 8 characters</li>
-                      <li>Must contain at least one uppercase letter</li>
-                      <li>Must contain alphanumeric characters</li>
-                      <li> Must have atleast one special character</li>
-                      <li>
-                        Please enter only allowed special character in password,
+                      <li className="Password-criteria-tag-li">
+                        <span style={{color:"#720c27",fontWeight:600}}>Must have minimum 8 characters</span>
+                        </li>
+                      <li className="Password-criteria-tag-li">
+                      <span style={{color:"#720c27",fontWeight:600}}>Must contain at least one uppercase letter</span>
+                      </li>
+                      <li className="Password-criteria-tag-li">
+                      <span style={{color:"#720c27",fontWeight:600}}>Must contain alphanumeric characters
+                      </span>
+                      </li>
+                      <li className="Password-criteria-tag-li"> 
+                      <span style={{color:"#720c27",fontWeight:600}}>Must have atleast one special character</span></li>
+                      <li className="Password-criteria-tag-li">
+                      <span style={{color:"#720c27",fontWeight:600}}>Please enter only allowed special character in password,
                         allowed special characters are !@#$%^&*
+                        </span>
                       </li>
                     </ul>
                   </div>
                   <div className="w-100 mt-3">
                     <Button
-                    type="submit"
-                      className="w-100"
-                      style={{
-                        backgroundColor: "#794afa",
-                        color: "white",
-                        height: "44px",
-                        fontSize: "20px",
-                        border: "none",
-                      }}
+                      type="submit"
+                      className="w-100 Signup-Button"
+                     
                     >
                       Register
                     </Button>
                   </div>
                 </form>
                 <div className="mt-3">
-                  <h6>
+                  <h6 className="sign-tag-h6">
                     Already have an account?{" "}
-                    <Link to="/signin" style={{ textDecoration: "none" }}>
+                    <Link to="/signin" style={{ textDecoration: "none",color:"#720c27",fontWeight:"bold", }}>
                       Sign in
                     </Link>
                   </h6>

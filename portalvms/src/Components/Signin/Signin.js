@@ -28,8 +28,8 @@ const Signin = () => {
             
             >
               <div className="login-main-div">
-                <div className="login-heading-div">
-                  <h4>LOGIN ATHITHI BOOK</h4>
+                <div className="d-flex justify-content-center login-heading-div">
+                  <h4 style={{color:"#720c27",fontWeight:700}}>LOGIN ATHITHI BOOK</h4>
                 </div>
                 <div className="mt-3">
                   <Form.Control size="lg" type="email" placeholder="Email" />
@@ -58,11 +58,14 @@ const Signin = () => {
                   <Button
                     className="w-100"
                     style={{
-                      backgroundColor: "#794afa",
+                      backgroundColor: "#720c27",
                       color: "white",
                       height: "44px",
                       fontSize: "20px",
-                      border:"none"
+                      border:"none",
+                      borderRadius:"20px",
+                      fontWeight:500
+
                     }}
                   >
                     Login
@@ -75,12 +78,15 @@ const Signin = () => {
                 <Button
                     
                     style={{
-                      backgroundColor: "red",
+                      backgroundColor: "#A04000",
                       color: "white",
                       height: "40px",
                       fontSize: "16px",
                       width:"48%",
-                      border:"none"
+                      border:"none",
+                      borderRadius:"20px",
+                      fontWeight:500
+
                     }}
                   >
                     Facebook
@@ -93,14 +99,18 @@ const Signin = () => {
                       height: "40px",
                       fontSize: "16px",
                       width:"48%",
-                      border:"none"
+                      border:"none",
+                      borderRadius:"20px",
+                      fontWeight:500
+
+
                     }}
                   >
                     Google
                   </Button>
                 </div>
                 <div className="mt-3">
-                  <h6>Don’t have an account? <Link to="/signup" style={{textDecoration:"none"}}>Register</Link></h6>
+                  <h6>Don’t have an account? <Link to="/signup" style={{textDecoration:"none",color:"#720c27",fontWeight:700}}>Register</Link></h6>
                 </div>
               </div>
             </Col>
