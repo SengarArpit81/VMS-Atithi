@@ -300,9 +300,9 @@ const CompanyDetails = () => {
                         </Row>
                         <div className="d-flex mt-4 justify-content-between">
                             <Button className="d-flex Company-Button">
-                                Back
+                                BACK
                             </Button>
-                            <Button className="d-flex  Company-Button" style={{ float: "right" }}>
+                            <Button className="d-flex  Company-Button">
                                 SUBMIT
                             </Button>
                         </div>
