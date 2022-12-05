@@ -17,7 +17,7 @@ const Fourbox = () => {
                 <Card className="Main-Card-Div Animation-Card-Left" >
                   {/* <Card.Header>Header</Card.Header> */}
                   <Card.Body className="d-flex justify-content-center align-items-center ">
-                  <Link className="linkstyles"  to ="/companydetails"> <Card.Title>Add Visitors</Card.Title></Link>
+                  <Link className="linkstyles"  to ="/addvisitors"> <Card.Title>Add Visitors</Card.Title></Link>
                     {/* <Card.Text>
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
@@ -31,7 +31,7 @@ const Fourbox = () => {
                 <Card className="Main-Card-Div Animation-Card-Top">
                   {/* <Card.Header>Header</Card.Header> */}
                   <Card.Body className="d-flex justify-content-center align-items-center ">
-                  <Link className="linkstyles"  to ="/companydetails"> <Card.Title>Approved Visitor List</Card.Title></Link>
+                  <Link className="linkstyles"  to ="/approvedvisitors"> <Card.Title>Approved Visitor List</Card.Title></Link>
                     {/* <Card.Text>
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
@@ -45,7 +45,7 @@ const Fourbox = () => {
                 <Card className="Main-Card-Div Animation-Card-Bottom">
                   {/* <Card.Header>Header</Card.Header> */}
                   <Card.Body className="d-flex justify-content-center align-items-center ">
-                  <Link className="linkstyles"  to ="/companydetails"> <Card.Title>Rejected List Visitor</Card.Title></Link>
+                  <Link className="linkstyles"  to ="/rejectedlist"> <Card.Title>Rejected List Visitor</Card.Title></Link>
                     {/* <Card.Text>
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
