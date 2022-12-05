@@ -43,7 +43,7 @@ const CompanyDetails = () => {
                     <Col
                         span={24}
 
-                        className=" d-flex  signup-main-div">
+                        className=" d-flex signup-main-div">
 
                         <div className="">
                             <div className="d-flex justify-content-center align-items-center ">
@@ -53,26 +53,27 @@ const CompanyDetails = () => {
 
                     </Col>
 
-                    <form onSubmit={handleSubmit} span={24} xl={24} className="mt-3 form-control " style={{ height: "380px" }}>
+                    <form onSubmit={handleSubmit} span={24} xl={24} className="mt-3 form-control " style={{ height: "500px" }}>
                         <Row>
                             <Col
                                 span={24}
                                 className=" w-100 d-flex"
                             >
-                                <Row className="w-100 mt-3 "  >
+                                <Row className="w-100 mt-3"  >
                                     <Col span={24} xs={24} sm={24} md={12} lg={12}
                                     >
                                         <Row style={{ marginRight: "4px" }}>
-                                            <Col span={24} style={{ flexDirection: "column" }}>
+                                            <Col span={24} style={{ flexDirection: "column",fontSize:"20px" }}>
                                                 <input
                                                     type="text"
+
                                                     placeholder="Please Enter your Company Name"
-                                                    name="company_n"
+                                                    name="company_n"                                         
                                                     autoComplete="off"
                                                     value={values.company_n}
                                                     onChange={handleChange}
                                                     onBlur={handleBlur}
-                                                    style={{ width: "100%", height: "40px" }}
+                                                    style={{ width: "100%", height: "50px" }}
                                                 />
                                             </Col>
                                             <Col style={{ height: "20px" }}>
@@ -94,17 +95,17 @@ const CompanyDetails = () => {
 
                                     <Col span={24} xs={24} sm={24} md={12} lg={12} className="second-main-Col">
                                         <Row style={{ marginRight: "4px" }}>
-                                            <Col span={24} style={{ flexDirection: "column" }}>
+                                            <Col span={24} style={{ flexDirection: "column",fontSize:"20px" }}>
                                                 <input
                                                     type="text"
-                                                    placeholder="Please Enter the email_id"
+                                                    placeholder="Please Enter the Email ID"
                                                     name="email_id"
                                                     autoComplete="off"
                                                     value={values.email_id}
                                                     onChange={handleChange}
                                                     onBlur={handleBlur}
                                                     className="secod-col-input-box"
-                                                    style={{ width: "100%", height: "40px" }}
+                                                    style={{ width: "100%", height: "50px" }}
 
 
                                                 />
@@ -132,7 +133,7 @@ const CompanyDetails = () => {
                                 <Col span={24} xs={24} sm={24} md={12} lg={12}
                                 >
                                     <Row style={{ marginRight: "4px" }}>
-                                        <Col span={24} style={{ flexDirection: "column" }}>
+                                        <Col span={24} style={{ flexDirection: "column",fontSize:"20px" }}>
                                             <input
                                                 type="text"
                                                 placeholder="Please Enter the Address"
@@ -142,7 +143,7 @@ const CompanyDetails = () => {
                                                 onBlur={handleBlur}
                                                 autoComplete="off"
 
-                                                style={{ width: "100%", height: "40px" }}
+                                                style={{ width: "100%", height: "50px" }}
                                             />
                                         </Col>
                                         <Col style={{height:"20px"}}>
@@ -164,7 +165,7 @@ const CompanyDetails = () => {
 
                                 <Col span={24} xs={24} sm={24} md={12} lg={12} className="second-main-Col ">
                                     <Row style={{ marginRight: "4px" }}>
-                                        <Col span={24} style={{ flexDirection: "column" }}>
+                                        <Col span={24} style={{ flexDirection: "column",fontSize:"20px" }}>
                                             <input
                                                 type="text"
                                                 placeholder="Please Enter the Floor Number"
@@ -174,7 +175,7 @@ const CompanyDetails = () => {
                                                 onChange={handleChange}
                                                 onBlur={handleBlur}
                                                 className="secod-col-input-box"
-                                                style={{ width: "100%", height: "40px" }}
+                                                style={{ width: "100%", height: "50px" }}
 
 
                                             />
@@ -198,7 +199,7 @@ const CompanyDetails = () => {
                                 <Col span={24} xs={24} sm={24} md={12} lg={12}
                                 >
                                     <Row style={{ marginRight: "4px" }}>
-                                        <Col span={24} style={{ flexDirection: "column" }}>
+                                        <Col span={24} style={{ flexDirection: "column",fontSize:"20px" }}>
                                             <input
                                                 type="text"
                                                 placeholder="Please Enter Building Name"
@@ -207,7 +208,7 @@ const CompanyDetails = () => {
                                                 value={values.building_name}
                                                 onChange={handleChange}
                                                 onBlur={handleBlur}
-                                                style={{ width: "100%", height: "40px" }}
+                                                style={{ width: "100%", height: "50px" }}
                                             />
                                         </Col>
                                         <Col style={{height:"20px"}}>
@@ -228,7 +229,7 @@ const CompanyDetails = () => {
 
                                 <Col span={24} xs={24} sm={24} md={12} lg={12} className="second-main-Col">
                                     <Row style={{ marginRight: "4px" }} >
-                                        <Col span={24} style={{ flexDirection: "column" }}>
+                                        <Col span={24} style={{ flexDirection: "column" ,fontSize:"20px"}}>
                                             <input
                                                 type="text"
                                                 placeholder="Please Enter Registered Phone Number"
@@ -238,7 +239,7 @@ const CompanyDetails = () => {
                                                 onChange={handleChange}
                                                 onBlur={handleBlur}
                                                 className="secod-col-input-box"
-                                                style={{ width: "100%", height: "40px" }}
+                                                style={{ width: "100%", height: "50px" }}
 
 
                                             />
@@ -263,7 +264,7 @@ const CompanyDetails = () => {
                                 <Col span={24} xs={24} sm={24} md={12} lg={12}
                                 >
                                     <Row style={{ marginRight: "4px" }}>
-                                        <Col span={24} style={{ flexDirection: "column" }}>
+                                        <Col span={24} style={{ flexDirection: "column",fontSize:"20px" }}>
                                             <input
                                                 type="text"
                                                 placeholder="Please Enter your official Address"
@@ -272,7 +273,7 @@ const CompanyDetails = () => {
                                                 value={values.address_official}
                                                 onChange={handleChange}
                                                 onBlur={handleBlur}
-                                                style={{ width: "100%", height: "40px" }}
+                                                style={{ width: "100%", height: "50px" }}
                                             />
                                         </Col>
                                         <Col style={{height:"20px"}}>
@@ -299,9 +300,9 @@ const CompanyDetails = () => {
                         </Row>
                         <div className="d-flex mt-4 justify-content-between">
                             <Button className="d-flex Company-Button">
-                                Back
+                                BACK
                             </Button>
-                            <Button className="d-flex  Company-Button" style={{ float: "right" }}>
+                            <Button className="d-flex  Company-Button">
                                 SUBMIT
                             </Button>
                         </div>

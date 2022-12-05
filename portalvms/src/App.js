@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Footermain from "./Components/Footer/Footermain";
 import Layoyt from "./Components/Home/Layoyt";
+import Fourbox from "./Components/fourbox/Fourbox";
 import CompanyDetails from "./Components/CompanyDetails/CompanyDetails";
 
 // https://doccure-react.dreamguystech.com/template/login#0
@@ -15,22 +16,29 @@ function App() {
   return (
     <>
       <div>
-    <Menubar/>
+
+      <Menubar />
+      
       </div>
-      <div >
+      <div style={{ minHeight: "90vh" }} className="Main-Layoyt-Div">
         
           <Routes>
             <Route exact path="/" element={<Layoyt />} />
             <Route exact path="/signin" element={<Signin />} />
             <Route exact path="/signup" element={<Signup />} />
+
+            <Route exact path="/fourbox" element={<Fourbox/>} />
+
             <Route exact path="/companydetails" element={<CompanyDetails />} />
 
           </Routes>
       
-  <div>
- <footer/> 
-  </div>
+  
+ 
         
+      </div>
+      <div>
+      <Footermain/>
       </div>
     </>
   );

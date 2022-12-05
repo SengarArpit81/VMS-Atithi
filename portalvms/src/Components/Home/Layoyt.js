@@ -22,20 +22,33 @@ const Layoyt = () => {
             >
               <div className="athithi-book-main-div">
                 <div className="d-flex">
-                  
-                  <img src="images/logo2.jpg" style={{width:"50px",height:"50px"}}/>
-                  <h1 className="layout-heading-tag-h1">ATHITHI BOOK</h1>
+                  <div>
+                    <img
+                      src="images/logo2.jpg"
+                      style={{ width: "50px", height: "50px" }}
+                    />
+                  </div>
+                  <div
+                    className="d-flex justify-content-center align-items-center"
+                    
+                  >
+                    <h1 className="layout-heading-tag-h1 ">ATHITHI BOOK</h1>
+                  </div>
                 </div>
                 <div className="mt-4">
                   <div>
                     <h6 className="fw-bold">Your Privacy is our priority</h6>
                     <span style={{color:"gray"}}>
+
                       Meet all compliances, manage workplace capacity and easily
                       extract reports for contact tracing with our visitor
                       management system!
                     </span>
                   </div>
                   <div className="mt-4">
+                    <h6 className="fw-bold">
+                      All your data, secured with us for ease of access
+                    </h6>
                     <h6 className="fw-bold">All your data, secured with us for ease of access</h6>
                     <span style={{color:"gray"}}>
                       Manage your account securely from anywhere on the globe
@@ -55,11 +68,13 @@ const Layoyt = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="d-flex justify-content-between align-items-center mt-5 layout-link-div">
+                  <div className="d-flex justify-content-between align-items-center layout-link-div">
                     <Link to="/signin" className="signin-link">
                       Login
                     </Link>
-                    <Link to="/signup" className="signup-link">Signup</Link>
+                    <Link to="/signup" className="signup-link">
+                      Signup
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -71,7 +86,7 @@ const Layoyt = () => {
               md={12}
               lg={12}
               xl={12}
-              className="p-5"
+              className="p-5 Layout-Imge-Col"
             >
               <div className="h-100">
                 <img src="/images/Aavo-Padharo.png" className="img-fluid" />

@@ -34,10 +34,13 @@ const Menubar = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto px-5">
-              <Link to="/" style={{fontWeight:"500",color:"black",marginRight:"10px"}}>Home</Link> <span></span>
-              <Link href="#pricing" style={{fontWeight:"500",color:"black",marginRight:"10px"}}>Benefits</Link>
-              <Link href="#pricing" style={{fontWeight:"500",color:"black",marginRight:"10px"}}>About us</Link>
-              <Link href="#pricing" style={{fontWeight:"500",color:"black",marginRight:"10px"}}>Contact us</Link>
+              <Nav.Link href="#features" style={{fontWeight:"500",color:"black"}}>Home</Nav.Link>
+              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Benefits</Nav.Link>
+              <div className="d-flex justify-content-center align-items-center mx-1">
+              <Link to="/fourbox" style={{ display:"flex",fontWeight:"500",color:"black",textDecoration:"none"}}>VMS Admin</Link>
+              </div>
+              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>About us</Nav.Link>
+              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Contact us</Nav.Link>
 
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -62,7 +65,8 @@ const Menubar = () => {
                       to="/signin"
                       style={{
                         textDecoration: "none",
-                        color: "rgba(0,0,0,.65)",
+                        color: "rgba(0,0,0,.70)",
+                        
                       }}
                     >
                       <h6 className="m-0 p-0 me-2 login-h6-tag">LOGIN</h6>
@@ -76,7 +80,7 @@ const Menubar = () => {
                       to="/signup"
                       style={{
                         textDecoration: "none",
-                        color: "rgba(0,0,0,.65)",
+                        color: "rgba(0,0,0,.70)",
                       }}
                     >
                     <h6 className="mx-2 m-0 p-0 login-h6-tag">SIGNUP</h6>
