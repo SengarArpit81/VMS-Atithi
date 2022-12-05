@@ -9,7 +9,9 @@ import Footermain from "./Components/Footer/Footermain";
 import Layoyt from "./Components/Home/Layoyt";
 import Fourbox from "./Components/fourbox/Fourbox";
 import CompanyDetails from "./Components/CompanyDetails/CompanyDetails";
-
+import Approvedvisitors from "./Components/Approved Visitors/approvedvisitors";
+import AddVisitors from "./Components/Add Visitors/AddVisitors";
+import Rejectedvisitors from "./Components/RejectedVis/RejectedVisitor";
 // https://doccure-react.dreamguystech.com/template/login#0
 
 function App() {
@@ -30,6 +32,9 @@ function App() {
             <Route exact path="/fourbox" element={<Fourbox/>} />
 
             <Route exact path="/companydetails" element={<CompanyDetails />} />
+            <Route exact path="/approvedvisitors" element={<Approvedvisitors />} />
+            <Route exact path="/addvisitors" element={<AddVisitors/>} />
+            <Route exact path="/rejectedlist" element={<Rejectedvisitors/>} />
 
           </Routes>
       

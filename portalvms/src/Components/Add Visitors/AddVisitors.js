@@ -3,8 +3,7 @@ import React from "react";
 import Button from "react-bootstrap/esm/Button";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-import "./Company-Button.css";
-import {  company_Schema } from "../Validation/Validation";
+import { company_Schema } from "../Validation/Validation";
 import { useFormik } from "formik";
 
 
@@ -20,7 +19,7 @@ const initialValues = {
 
 }
 
-const CompanyDetails = () => {
+const AddVisitors = () => {
 
     const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
         useFormik({
@@ -47,7 +46,7 @@ const CompanyDetails = () => {
 
                         <div className="">
                             <div className="d-flex justify-content-center align-items-center ">
-                                <h4 className="Signup-heading-tag-h4 ">Company Details-</h4>
+                                <h4 className="Signup-heading-tag-h4 ">Add Visitors</h4>
                             </div>
                         </div>
 
@@ -318,4 +317,4 @@ const CompanyDetails = () => {
     );
 }
 
-export default CompanyDetails;
+export default AddVisitors;
