@@ -14,7 +14,12 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all .6s ease-in-out;
+    
     /* transition: width 1s, height 1s; */
+}
+.linkstyles{
+  text-decoration: none;
+  color: black;
 }
 .Main-Card-Div:hover{
     
