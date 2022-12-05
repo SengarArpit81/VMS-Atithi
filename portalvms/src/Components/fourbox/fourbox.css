@@ -1,0 +1,131 @@
+.Main-Card-Layout-Div{
+    /* border: 2px solid red; */
+    min-height: 90vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    
+}
+.Main-Card-Div{
+    border: 3px solid rgb(95, 13, 13);
+    width: 20rem;
+    height: 15rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+    /* transition: width 1s, height 1s; */
+}
+.Main-Card-Div:hover{
+    
+    transform: scale(1.1) rotate(0deg);
+}
+
+@media (max-width:1350px){
+    .Main-Card-Div{
+        border: 2px solid rgb(95, 13, 13);
+        width: 17rem;
+        height: 12rem;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 15px;
+        
+    }  
+}
+
+@media (max-width:1200px){
+    .Main-Card-Div{
+        border: 2px solid rgb(95, 13, 13);
+        width: 18rem;
+        height: 13rem;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 15px;
+        
+    }  
+}
+@media (max-width:600px){
+    .Main-Card-Div{
+        border: 2px solid rgb(95, 13, 13);
+        width: 15rem;
+        height: 12rem;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 15px;
+    }  
+}
+
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+ 
+
+  @keyframes slideInTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+ 
+  .Animation-Card-Left{
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+    background: #666;
+  }
+
+  .Animation-Card-Top{
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInTop;
+    background: #666;
+  }
+
+  .Animation-Card-Bottom{
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInBottom;
+    background: #666;
+  }
+
+  .Animation-Card-Right{
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInRight;
+    background: #666;
+  }

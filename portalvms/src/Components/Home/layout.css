@@ -4,21 +4,24 @@
     padding-left: 100px;
 }
 .layout-heading-tag-h1{
-    color: rgb(34, 29, 100);
+    color: maroon;
     margin-left: 10px;
+}
+.layout-link-div{
+    margin-top: 70px;
 }
 .signin-link{
     text-decoration: none;
     background-color: rgb(77, 112, 218);
     color: white;
-    height: 40px;
+    height: 50px;
     font-size: 16px;
     width: 48%;
     /* border: 2px solid rgb(49, 67, 233); */
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 30px;
     font-weight: 500;
 }
 .signin-link:hover{
@@ -31,14 +34,14 @@
     text-decoration: none;
     background-color: rgb(104, 8, 67);
     color: white;
-    height: 40px;
+    height: 50px;
     font-size: 16px;
     width: 48%;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 30px;
     font-weight: 500;
 
 }
@@ -52,4 +55,48 @@
 }
 .layout-left-main-col{
    
+}
+
+@media (max-width:767px){
+    .Layout-Imge-Col{
+        display: none;
+    }
+    .athithi-book-main-div{
+        /* border:1px solid red; */
+        padding-top: 20px;
+        padding-left: 35px;
+
+        padding-right: 35px;
+    }
+
+    .layout-link-div{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .signin-link{
+        height: 45px;
+    }
+    .signup-link{
+        height: 45px;
+    }
+
+}
+
+@media (max-width:450px){
+    .athithi-book-main-div{
+        /* border:1px solid red; */
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .layout-link-div{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .signin-link{
+        height: 40px;
+    }
+    .signup-link{
+        height: 40px;
+    }
 }
