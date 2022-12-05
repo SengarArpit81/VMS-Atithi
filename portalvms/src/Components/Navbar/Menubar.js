@@ -35,12 +35,12 @@ const Menubar = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto px-5">
               <Nav.Link href="#features" style={{fontWeight:"500",color:"black"}}>Home</Nav.Link>
-              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Benifites</Nav.Link>
+              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Benefits</Nav.Link>
               <div className="d-flex justify-content-center align-items-center mx-1">
-              <Link to="/fourbox" style={{ display:"flex",fontWeight:"500",color:"black",textDecoration:"none"}}>Four Box</Link>
+              <Link to="/fourbox" style={{ display:"flex",fontWeight:"500",color:"black",textDecoration:"none"}}>VMS Admin</Link>
               </div>
-              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>About US</Nav.Link>
-              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Contact US</Nav.Link>
+              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>About us</Nav.Link>
+              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Contact us</Nav.Link>
 
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

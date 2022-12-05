@@ -38,31 +38,33 @@ const Layoyt = () => {
                 <div className="mt-4">
                   <div>
                     <h6 className="fw-bold">Your Privacy is our priority</h6>
-                    <sapn style={{ color: "gray" }}>
+                    <span style={{color:"gray"}}>
+
                       Meet all compliances, manage workplace capacity and easily
                       extract reports for contact tracing with our visitor
                       management system!
-                    </sapn>
+                    </span>
                   </div>
                   <div className="mt-4">
                     <h6 className="fw-bold">
                       All your data, secured with us for ease of access
                     </h6>
-                    <sapn style={{ color: "gray" }}>
+                    <h6 className="fw-bold">All your data, secured with us for ease of access</h6>
+                    <span style={{color:"gray"}}>
                       Manage your account securely from anywhere on the globe
                       with our secured cloud based visitor management system!
-                    </sapn>
+                    </span>
                   </div>
                   <div className="mt-4">
                     <h6 className="fw-bold">
                       Extensive safety and security measures for both your
                       employees and your visitors
                     </h6>
-                    <sapn style={{ color: "gray" }}>
+                    <span style={{color:"gray"}}>
                       Use top of the notch features including health declaration
                       for your visitors and a zero contact check-in with our
                       contact-less visitor management system!
-                    </sapn>
+                    </span>
                   </div>
                 </div>
                 <div>
