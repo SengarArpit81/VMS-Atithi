@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Footermain from "./Components/Footer/Footermain";
 import Layoyt from "./Components/Home/Layoyt";
+import CompanyDetails from "./Components/CompanyDetails/CompanyDetails";
 
 // https://doccure-react.dreamguystech.com/template/login#0
 
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
       <div>
-      <Menubar />
+    <Menubar/>
       </div>
       <div >
         
@@ -22,9 +23,14 @@ function App() {
             <Route exact path="/" element={<Layoyt />} />
             <Route exact path="/signin" element={<Signin />} />
             <Route exact path="/signup" element={<Signup />} />
+            <Route exact path="/companydetails" element={<CompanyDetails />} />
+
           </Routes>
+      
+  <div>
+ <footer/> 
+  </div>
         
-        <Footermain/>
       </div>
     </>
   );

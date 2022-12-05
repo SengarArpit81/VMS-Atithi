@@ -34,10 +34,10 @@ const Menubar = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto px-5">
-              <Nav.Link href="#features" style={{fontWeight:"500",color:"black"}}>Home</Nav.Link>
-              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Benifites</Nav.Link>
-              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>About US</Nav.Link>
-              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Contact US</Nav.Link>
+              <Link to="/" style={{fontWeight:"500",color:"black",marginRight:"10px"}}>Home</Link> <span></span>
+              <Link href="#pricing" style={{fontWeight:"500",color:"black",marginRight:"10px"}}>Benefits</Link>
+              <Link href="#pricing" style={{fontWeight:"500",color:"black",marginRight:"10px"}}>About us</Link>
+              <Link href="#pricing" style={{fontWeight:"500",color:"black",marginRight:"10px"}}>Contact us</Link>
 
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
