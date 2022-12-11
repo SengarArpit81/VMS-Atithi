@@ -28,10 +28,8 @@ const Signup = () => {
       },
     });
 
-
-  
   //  console.log("Formik value",errors)
-  // https://www.youtube.com/watch?v=uq_bzHuRD9g 
+  // https://www.youtube.com/watch?v=uq_bzHuRD9g
   return (
     <div>
       <Row>
@@ -61,14 +59,13 @@ const Signup = () => {
             >
               <div className="p-2">
                 <div className="d-flex justify-content-center align-items-center ">
-                  <h4 className="Signup-heading-tag-h4 ">SIGNUP ATHITHI BOOK</h4>
+                  <h4 className="Signup-heading-tag-h4 ">
+                    SIGNUP ATHITHI BOOK
+                  </h4>
                 </div>
                 <form onSubmit={handleSubmit}>
                   <Row>
-                    <Col
-                      span={24}
-                      className="mt-3 w-100 d-flex"
-                    >
+                    <Col span={24} className="mt-3 w-100 d-flex">
                       <Row className="w-100">
                         <Col
                           span={12}
@@ -91,19 +88,23 @@ const Signup = () => {
                                 style={{ width: "96%", height: "36px" }}
                               />
                             </Col>
-                            <Col style={{height:"20px"}}>
+                            <Col style={{ height: "20px" }}>
                               {errors.first_Name && touched.first_Name ? (
-                                <p
-                                  className="form-error"
-                                
-                                >
+                                <p className="form-error">
                                   {errors.first_Name}
                                 </p>
                               ) : null}
                             </Col>
                           </Row>
                         </Col>
-                        <Col span={12} xs={24} sm={24} md={12} lg={12} className="second-main-Col">
+                        <Col
+                          span={12}
+                          xs={24}
+                          sm={24}
+                          md={12}
+                          lg={12}
+                          className="second-main-Col"
+                        >
                           <Row>
                             <Col span={24} style={{ flexDirection: "column" }}>
                               <input
@@ -115,14 +116,11 @@ const Signup = () => {
                                 onChange={handleChange}
                                 onBlur={handleBlur}
                                 className="secod-col-input-box"
-                               
                               />
                             </Col>
-                            <Col style={{height:"20px"}}>
+                            <Col style={{ height: "20px" }}>
                               {errors.last_Name && touched.last_Name ? (
-                                <p
-                                  className="form-error form-error-col-p-tag"
-                                >
+                                <p className="form-error form-error-col-p-tag">
                                   {errors.last_Name}
                                 </p>
                               ) : null}
@@ -130,16 +128,11 @@ const Signup = () => {
                           </Row>
                         </Col>
                       </Row>
-
-                      
                     </Col>
                   </Row>
 
                   <Row>
-                    <Col
-                      span={24}
-                      className="mt-3 w-100 d-flex"
-                    >
+                    <Col span={24} className="mt-3 w-100 d-flex">
                       <Row className="w-100">
                         <Col
                           span={12}
@@ -156,25 +149,31 @@ const Signup = () => {
                                 placeholder="Pnone Number"
                                 name="phone_number"
                                 autoComplete="off"
+                              
+                                maxLength={10}
                                 value={values.phone_number}
                                 onChange={handleChange}
                                 onBlur={handleBlur}
                                 style={{ width: "96%", height: "36px" }}
                               />
                             </Col>
-                            <Col style={{height:"20px"}}>
+                            <Col style={{ height: "20px" }}>
                               {errors.phone_number && touched.phone_number ? (
-                                <p
-                                  className="form-error"
-                                
-                                >
+                                <p className="form-error">
                                   {errors.phone_number}
                                 </p>
                               ) : null}
                             </Col>
                           </Row>
                         </Col>
-                        <Col span={12} xs={24} sm={24} md={12} lg={12} className="second-main-Col">
+                        <Col
+                          span={12}
+                          xs={24}
+                          sm={24}
+                          md={12}
+                          lg={12}
+                          className="second-main-Col"
+                        >
                           <Row>
                             <Col span={24} style={{ flexDirection: "column" }}>
                               <input
@@ -188,12 +187,9 @@ const Signup = () => {
                                 className="secod-col-input-box"
                               />
                             </Col>
-                            <Col style={{height:"20px"}}>
+                            <Col style={{ height: "20px" }}>
                               {errors.email && touched.email ? (
-                                <p
-                                  
-                                  className="form-error form-error-col-p-tag"
-                                >
+                                <p className="form-error form-error-col-p-tag">
                                   {errors.email}
                                 </p>
                               ) : null}
@@ -201,16 +197,11 @@ const Signup = () => {
                           </Row>
                         </Col>
                       </Row>
-
-                      
                     </Col>
                   </Row>
 
                   <Row>
-                    <Col
-                      span={24}
-                      className="mt-3 w-100 d-flex"
-                    >
+                    <Col span={24} className=" w-100 d-flex" style={{marginTop:"20px"}}>
                       <Row className="w-100">
                         <Col
                           span={24}
@@ -233,30 +224,21 @@ const Signup = () => {
                                 className="company-col-input-box"
                               />
                             </Col>
-                            <Col style={{height:"20px"}}>
+                            <Col style={{ height: "20px" }}>
                               {errors.company_name && touched.company_name ? (
-                                <p
-                                  className="form-error"
-                                  
-                                >
+                                <p className="form-error">
                                   {errors.company_name}
                                 </p>
                               ) : null}
                             </Col>
                           </Row>
                         </Col>
-                       
                       </Row>
-
-                      
                     </Col>
                   </Row>
 
                   <Row>
-                    <Col
-                      span={24}
-                      className="mt-3 w-100 d-flex"
-                    >
+                    <Col span={24} className=" w-100 d-flex" style={{marginTop:"20px"}}>
                       <Row className="w-100">
                         <Col
                           span={12}
@@ -276,22 +258,25 @@ const Signup = () => {
                                 value={values.password}
                                 onChange={handleChange}
                                 onBlur={handleBlur}
+                                
                                 style={{ width: "96%", height: "36px" }}
                               />
                             </Col>
-                            <Col style={{height:"20px"}}>
+                            <Col style={{ height: "20px" }}>
                               {errors.password && touched.password ? (
-                                <p
-                                  className="form-error"
-                              
-                                >
-                                  {errors.password}
-                                </p>
+                                <p className="form-error">{errors.password}</p>
                               ) : null}
                             </Col>
                           </Row>
                         </Col>
-                        <Col span={12} xs={24} sm={24} md={12} lg={12} className="second-main-Col">
+                        <Col
+                          span={12}
+                          xs={24}
+                          sm={24}
+                          md={12}
+                          lg={12}
+                          className="second-main-Col"
+                        >
                           <Row>
                             <Col span={24} style={{ flexDirection: "column" }}>
                               <input
@@ -305,11 +290,10 @@ const Signup = () => {
                                 className="secod-col-input-box"
                               />
                             </Col>
-                            <Col style={{height:"20px"}}>
-                              {errors.confirm_password && touched.confirm_password ? (
-                                <p
-                                className="form-error form-error-col-p-tag"
-                                >
+                            <Col style={{ height: "20px" }}>
+                              {errors.confirm_password &&
+                              touched.confirm_password ? (
+                                <p className="form-error form-error-col-p-tag">
                                   {errors.confirm_password}
                                 </p>
                               ) : null}
@@ -317,40 +301,44 @@ const Signup = () => {
                           </Row>
                         </Col>
                       </Row>
-
-                      
                     </Col>
                   </Row>
-                  
 
                   <div className="mt-3">
-                    <h6 className="Password-criteria-tag-h6 ">Password must match below criteria:</h6>
+                    <h6 className="Password-criteria-tag-h6 ">
+                      Password must match below criteria:
+                    </h6>
                     <ul>
                       <li className="Password-criteria-tag-li">
-                        <span style={{color:"#720c27",fontWeight:600}}>Must have minimum 8 characters</span>
-                        </li>
-                      <li className="Password-criteria-tag-li">
-                      <span style={{color:"#720c27",fontWeight:600}}>Must contain at least one uppercase letter</span>
+                        <span style={{ color: "#720c27", fontWeight: 600 }}>
+                          Must have minimum 8 characters
+                        </span>
                       </li>
                       <li className="Password-criteria-tag-li">
-                      <span style={{color:"#720c27",fontWeight:600}}>Must contain alphanumeric characters
-                      </span>
+                        <span style={{ color: "#720c27", fontWeight: 600 }}>
+                          Must contain at least one uppercase letter
+                        </span>
                       </li>
-                      <li className="Password-criteria-tag-li"> 
-                      <span style={{color:"#720c27",fontWeight:600}}>Must have atleast one special character</span></li>
                       <li className="Password-criteria-tag-li">
-                      <span style={{color:"#720c27",fontWeight:600}}>Please enter only allowed special character in password,
-                        allowed special characters are !@#$%^&*
+                        <span style={{ color: "#720c27", fontWeight: 600 }}>
+                          Must contain alphanumeric characters
+                        </span>
+                      </li>
+                      <li className="Password-criteria-tag-li">
+                        <span style={{ color: "#720c27", fontWeight: 600 }}>
+                          Must have atleast one special character
+                        </span>
+                      </li>
+                      <li className="Password-criteria-tag-li">
+                        <span style={{ color: "#720c27", fontWeight: 600 }}>
+                          Please enter only allowed special character in
+                          password, allowed special characters are !@#$%^&*
                         </span>
                       </li>
                     </ul>
                   </div>
                   <div className="w-100 mt-3">
-                    <Button
-                      type="submit"
-                      className="w-100 Signup-Button"
-                     
-                    >
+                    <Button type="submit" className="w-100 Signup-Button">
                       Register
                     </Button>
                   </div>
@@ -358,7 +346,15 @@ const Signup = () => {
                 <div className="mt-3">
                   <h6 className="sign-tag-h6">
                     Already have an account?{" "}
-                    <Link to="/signin" style={{ textDecoration: "none",color:"#720c27",fontWeight:"bold", }}>
+                    <Link
+                      to="/signin"
+                      style={{
+                        textDecoration: "none",
+                        color: "#720c27",
+                        fontWeight: "bold",
+                        fontSize: "19px",
+                      }}
+                    >
                       Sign in
                     </Link>
                   </h6>

@@ -110,7 +110,8 @@ const Signin = () => {
                   </Button>
                 </div>
                 <div className="mt-3">
-                  <h6>Don’t have an account? <Link to="/signup" style={{textDecoration:"none",color:"#720c27",fontWeight:700}}>Register</Link></h6>
+                  <h6>Don’t have an account? <Link to="/signup" style={{textDecoration:"none",color:"#720c27",fontSize:"19px",fontWeight:700}}>
+                    Register</Link></h6>
                 </div>
               </div>
             </Col>
