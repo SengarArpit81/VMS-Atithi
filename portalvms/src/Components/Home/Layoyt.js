@@ -49,7 +49,6 @@ const Layoyt = () => {
                     <h6 className="fw-bold">
                       All your data, secured with us for ease of access
                     </h6>
-                    <h6 className="fw-bold">All your data, secured with us for ease of access</h6>
                     <span style={{color:"gray"}}>
                       Manage your account securely from anywhere on the globe
                       with our secured cloud based visitor management system!
