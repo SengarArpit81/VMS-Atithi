@@ -8,21 +8,26 @@
     
 }
 .Main-Card-Div{
-    border: 3px solid rgb(95, 13, 13);
-    width: 20rem;
+    border: 2px solid rgb(22, 22, 22);
+    width: 19rem;
     height: 15rem;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     transition: all .6s ease-in-out;
-    
+    background-image: linear-gradient(to right,rgb(86, 238, 86),yellow);
     /* transition: width 1s, height 1s; */
 }
+
 .linkstyles{
   text-decoration: none;
   color: black;
+  font-weight: 600;
+}
+.linkstyles :hover{
+  color: white;
 }
 .Main-Card-Div:hover{
-    
+  
     transform: scale(1.1) rotate(0deg);
 }
 
@@ -31,7 +36,7 @@
         border: 2px solid rgb(95, 13, 13);
         width: 17rem;
         height: 12rem;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         cursor: pointer;
         margin-top: 15px;
         
@@ -43,7 +48,7 @@
         border: 2px solid rgb(95, 13, 13);
         width: 18rem;
         height: 13rem;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         cursor: pointer;
         margin-top: 15px;
         
@@ -54,7 +59,7 @@
         border: 2px solid rgb(95, 13, 13);
         width: 15rem;
         height: 12rem;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         cursor: pointer;
         margin-top: 15px;
     }  
@@ -105,7 +110,7 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-name: slideInLeft;
-    background: #666;
+    /* background: #666; */
   }
 
   .Animation-Card-Top{
@@ -114,7 +119,7 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-name: slideInTop;
-    background: #666;
+    /* background: #666; */
   }
 
   .Animation-Card-Bottom{
@@ -123,7 +128,7 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-name: slideInBottom;
-    background: #666;
+    /* background: #666; */
   }
 
   .Animation-Card-Right{
@@ -132,5 +137,5 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-name: slideInRight;
-    background: #666;
+    /* background: #666; */
   }

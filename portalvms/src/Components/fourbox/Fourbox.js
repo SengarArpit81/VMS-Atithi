@@ -12,12 +12,13 @@ const Fourbox = () => {
       <Row>
         <Col span={24} >
           <Row className="Main-Card-Layout-Div">
-            <Col span={6} xs={24} sm={12} md={12} lg={12} xl={6} className="d-flex justify-content-center align-items-center ">
+            <Col span={6} xs={24} sm={12} md={12} lg={12} xl={12} className="d-flex justify-content-center align-items-center ">
               <div>
-                <Card className="Main-Card-Div Animation-Card-Left" >
+                <Card className="Main-Card-Div Animation-Card-Left Main-Card-Div-Left" >
                   {/* <Card.Header>Header</Card.Header> */}
                   <Card.Body className="d-flex justify-content-center align-items-center ">
-                  <Link className="linkstyles"  to ="/addvisitors"> <Card.Title>Add Visitors</Card.Title></Link>
+                  <Link className="linkstyles"  to ="/addvisitors">
+                     <Card.Title>Add Visitors</Card.Title></Link>
                     {/* <Card.Text>
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
@@ -26,7 +27,7 @@ const Fourbox = () => {
                 </Card>
               </div>
             </Col>
-            <Col span={6} xs={24} sm={12} md={12} lg={12} xl={6} className="d-flex justify-content-center align-items-center ">
+            <Col span={6} xs={24} sm={12} md={12} lg={12} xl={12} className="d-flex justify-content-center align-items-center ">
               <div>
                 <Card className="Main-Card-Div Animation-Card-Top">
                   {/* <Card.Header>Header</Card.Header> */}
@@ -40,7 +41,7 @@ const Fourbox = () => {
                 </Card>
               </div>
             </Col>
-            <Col span={6} xs={24} sm={12} md={12} lg={12} xl={6} className="d-flex justify-content-center align-items-center ">
+            <Col span={6} xs={24} sm={12} md={12} lg={12} xl={12} className="d-flex justify-content-center align-items-center ">
               <div>
                 <Card className="Main-Card-Div Animation-Card-Bottom">
                   {/* <Card.Header>Header</Card.Header> */}
@@ -54,10 +55,7 @@ const Fourbox = () => {
                 </Card>
               </div>
             </Col>
-            <Col span={6} xs={24} sm={12} md={12} lg={12} xl={6} className="d-flex justify-content-center align-items-center ">
-
-
-
+            <Col span={6} xs={24} sm={12} md={12} lg={12} xl={12} className="d-flex justify-content-center align-items-center ">
                 <div>
 
                   <Card className="Main-Card-Div Animation-Card-Right">
