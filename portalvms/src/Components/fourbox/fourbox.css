@@ -9,9 +9,9 @@
 }
 .Main-Card-Div{
     border: 2px solid rgb(22, 22, 22);
-    width: 19rem;
-    height: 15rem;
-    border-radius: 30px;
+    width: 24rem;
+    height: 18rem;
+    border-radius: 40px;
     cursor: pointer;
     transition: all .6s ease-in-out;
     background-image: linear-gradient(to right,rgb(86, 238, 86),yellow);

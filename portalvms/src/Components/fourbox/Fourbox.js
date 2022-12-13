@@ -10,9 +10,9 @@ const Fourbox = () => {
   return (
     <div>
       <Row>
-        <Col span={24} >
+        <Col span={24}>
           <Row className="Main-Card-Layout-Div">
-            <Col span={6} xs={24} sm={12} md={12} lg={12} xl={12} className="d-flex justify-content-center align-items-center ">
+            <Col span={6} xs={24} sm={12} md={12} lg={12} xl={12} className="d-flex justify-content-center align-items-center">
               <div>
                 <Card className="Main-Card-Div Animation-Card-Left Main-Card-Div-Left" >
                   {/* <Card.Header>Header</Card.Header> */}
