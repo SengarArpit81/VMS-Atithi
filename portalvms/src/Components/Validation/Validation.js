@@ -1,6 +1,7 @@
 import * as Yup from "yup";
 
-const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+// const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+
 export const signupSchema = Yup.object({
     first_Name:Yup.string().min(3).max(20).required("Please enter your first name.").matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed"),
     last_Name:Yup.string().min(3).max(30).required("Please enter your last name.").matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed"),
