@@ -1,4 +1,4 @@
-import { Col, Row } from "antd";
+import { Col, Row ,Input} from "antd";
 import React from "react";
 import Button from "react-bootstrap/esm/Button";
 import Form from "react-bootstrap/Form";
@@ -77,7 +77,7 @@ const Signup = () => {
                         >
                           <Row>
                             <Col span={24} style={{ flexDirection: "column" }}>
-                              <input
+                              <Input
                                 type="text"
                                 placeholder="First Name"
                                 name="first_Name"
@@ -107,7 +107,7 @@ const Signup = () => {
                         >
                           <Row>
                             <Col span={24} style={{ flexDirection: "column" }}>
-                              <input
+                              <Input
                                 type="text"
                                 placeholder="Last Name"
                                 name="last_Name"
@@ -144,7 +144,7 @@ const Signup = () => {
                         >
                           <Row>
                             <Col span={24} style={{ flexDirection: "column" }}>
-                              <input
+                              <Input
                                 type="text"
                                 placeholder="Pnone Number"
                                 name="phone_number"
@@ -176,7 +176,7 @@ const Signup = () => {
                         >
                           <Row>
                             <Col span={24} style={{ flexDirection: "column" }}>
-                              <input
+                              <Input
                                 type="email"
                                 placeholder="Enter email id"
                                 name="email"
@@ -213,7 +213,7 @@ const Signup = () => {
                         >
                           <Row>
                             <Col span={24} style={{ flexDirection: "column" }}>
-                              <input
+                              <Input
                                 type="text"
                                 placeholder="Enter company name"
                                 name="company_name"
@@ -250,7 +250,7 @@ const Signup = () => {
                         >
                           <Row>
                             <Col span={24} style={{ flexDirection: "column" }}>
-                              <input
+                              <Input
                                 type="password"
                                 placeholder="Enter password"
                                 name="password"
@@ -279,7 +279,7 @@ const Signup = () => {
                         >
                           <Row>
                             <Col span={24} style={{ flexDirection: "column" }}>
-                              <input
+                              <Input
                                 type="password"
                                 placeholder="Re-Enter Password"
                                 name="confirm_password"
