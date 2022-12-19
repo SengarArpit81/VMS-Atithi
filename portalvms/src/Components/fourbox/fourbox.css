@@ -9,9 +9,9 @@
 }
 .Main-Card-Div{
     border: 2px solid rgb(22, 22, 22);
-    width: 24rem;
-    height: 18rem;
-    border-radius: 40px;
+    width: 22rem;
+    height: 16rem;
+    border-radius: 50px;
     cursor: pointer;
     transition: all .6s ease-in-out;
     background-image: linear-gradient(to right,rgb(86, 238, 86),yellow);
@@ -29,6 +29,18 @@
 .Main-Card-Div:hover{
   
     transform: scale(1.1) rotate(0deg);
+}
+
+@media (max-width:1500px){
+  .Main-Card-Div{
+      border: 2px solid rgb(95, 13, 13);
+      width: 22rem;
+      height: 16rem;
+      /* border-radius: 10px; */
+      cursor: pointer;
+      margin-top: 15px;
+      
+  }  
 }
 
 @media (max-width:1350px){
