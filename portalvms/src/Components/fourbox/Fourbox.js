@@ -62,7 +62,7 @@ const Fourbox = () => {
                     {/* <Card.Header>Header</Card.Header> */}
 
                     <Card.Body className="d-flex justify-content-center align-items-center ">
-                    <Link className="linkstyles"  to ="/companydetails">  <Card.Title>Company Details</Card.Title>              </Link>
+                    <Link className="linkstyles"  to ="/companydetails">  <Card.Title>Add Company Details</Card.Title>              </Link>
 
 
                       {/* <Card.Text>
