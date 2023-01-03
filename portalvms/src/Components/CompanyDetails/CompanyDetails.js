@@ -144,7 +144,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Enter Comapny Co-Owner Name"
+                                  placeholder="Enter Company Co-Founder Name"
                                   name="co_owner_name"
                                   autoComplete="off"
                                   value={values.co_owner_name}
@@ -217,7 +217,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Enter Comapny Website "
+                                  placeholder="Enter Company Website "
                                   name="website"
                                   autoComplete="off"
                                   value={values.website}
@@ -250,7 +250,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Comapny Logo"
+                                  placeholder="Company Logo"
                                   name="company_logo"
                                   autoComplete="off"
                                   value={values.company_logo}
@@ -324,7 +324,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Enter Comapny employee strangth"
+                                  placeholder="Enter Company employee strength"
                                   name="emp_stranghth"
                                   autoComplete="off"
                                   value={values.emp_stranghth}
@@ -357,7 +357,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Enter Comapny Email"
+                                  placeholder="Enter Company Email"
                                   name="company_email"
                                   autoComplete="off"
                                   value={values.company_email}
@@ -386,7 +386,7 @@ const CompanyDetails = () => {
                   className="p-1 mt-2 form-control"
                 >
                   <Col span={24}>
-                <h6 style={{color:"maroon"}} >Primary Conatct Information</h6>
+                <h6 style={{color:"maroon"}} >Primary Contact Information</h6>
 
                     <Row>
                       <Col span={24} className="w-100 d-flex">
@@ -440,7 +440,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Enter First Conatct Number"
+                                  placeholder="Enter First Contact Number"
                                   name="first_conatct"
                                   autoComplete="off"
                                   value={values.first_conatct}
@@ -473,7 +473,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Enter Second Conatct Number"
+                                  placeholder="Enter Second Contact Number"
                                   name="second_contact"
                                   autoComplete="off"
                                   value={values.second_contact}
@@ -546,7 +546,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Enter Comapny Website "
+                                  placeholder="Enter Company Website "
                                   name="website"
                                   autoComplete="off"
                                   value={values.website}
@@ -579,7 +579,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Comapny Logo"
+                                  placeholder="Company Logo"
                                   name="company_logo"
                                   autoComplete="off"
                                   value={values.company_logo}
@@ -962,7 +962,7 @@ const CompanyDetails = () => {
                                 
                                 <Input 
                                 type="text"
-                                placeholder="Sociaty Name"
+                                placeholder="Society Name"
                                 name="Sociaty_Name"
                                 autoComplete="off"
                                 value={values.Sociaty_Name}
@@ -1028,7 +1028,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Enter Building Flour Number"
+                                  placeholder="Enter Building Floor Number"
                                   name="Flour_Number"
                                   autoComplete="off"
                                   value={values.Flour_Number}
@@ -1109,6 +1109,7 @@ const CompanyDetails = () => {
                                   onBlur={handleBlur}
                                   className="secod-col-input-box"
                                 />
+                              </Col>
                               </Col>
                               <Col style={{ height: "20px" }}>
                                 {errors.website && touched.website ? (
