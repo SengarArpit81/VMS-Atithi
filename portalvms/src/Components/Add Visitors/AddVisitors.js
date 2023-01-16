@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 import { company_Schema } from "../Validation/Validation";
 import { useFormik } from "formik";
 import './AddVisitors.css';
-import DatePicker from "react-datepicker";
-import TimePicker from "rc-time-picker";
-import "react-datepicker/dist/react-datepicker.css";
-import 'rc-time-picker/assets/index.css';
+// import DatePicker from "react-datepicker";
+// import TimePicker from "rc-time-picker";
+// import "react-datepicker/dist/react-datepicker.css";
+// import 'rc-time-picker/assets/index.css';
 
 
 
@@ -161,15 +161,15 @@ const AddVisitors = () => {
                         <Row className='mt-3' >
                             <Col xs={12} lg={4} md={4} sm={4}><div>Date</div>
 
-                                <DatePicker />
+                                {/* <DatePicker /> */}
                             </Col>
                             <Col xs={12} sm={4} md={4} lg={4}><div>Time</div>
-                                <TimePicker
+                                {/* <TimePicker
 
                                     use12Hours
                                     showSecond={false}
                                     focusOnOpen={true}
-                                    format="hh:mm A" />
+                                    format="hh:mm A" /> */}
                             </Col>
                             <Col xs={12} sm={4} md={4} lg={4}><div>AadharCard Number</div>
                                 <Form.Control className="mb-1"
