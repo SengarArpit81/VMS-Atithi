@@ -388,6 +388,7 @@ const CompanyDetails = () => {
                   <Col span={24}>
                 <h6 style={{color:"maroon"}} >Primary Contact Information</h6>
 
+
                     <Row>
                       <Col span={24} className="w-100 d-flex">
                         <Row className="w-100">
@@ -441,6 +442,7 @@ const CompanyDetails = () => {
                                 <Input
                                   type="text"
                                   placeholder="Enter First Contact Number"
+
                                   name="first_conatct"
                                   autoComplete="off"
                                   value={values.first_conatct}
@@ -473,7 +475,9 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
+
                                   placeholder="Enter Second Contact Number"
+
                                   name="second_contact"
                                   autoComplete="off"
                                   value={values.second_contact}
@@ -579,7 +583,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Company Logo"
+                                  placeholder="Company Logo
                                   name="company_logo"
                                   autoComplete="off"
                                   value={values.company_logo}
@@ -962,7 +966,10 @@ const CompanyDetails = () => {
                                 
                                 <Input 
                                 type="text"
+
                                 placeholder="Society Name"
+
+                         
                                 name="Sociaty_Name"
                                 autoComplete="off"
                                 value={values.Sociaty_Name}
@@ -1110,7 +1117,9 @@ const CompanyDetails = () => {
                                   className="secod-col-input-box"
                                 />
                               </Col>
+
                               </Col>
+
                               <Col style={{ height: "20px" }}>
                                 {errors.website && touched.website ? (
                                   <p className="form-error form-error-col-p-tag">

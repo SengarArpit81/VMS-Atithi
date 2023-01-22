@@ -1,3 +1,4 @@
+
 .bg-imgae {
   background: url(/public/images/bg-image4.jpg);
   object-fit: cover;
@@ -16,21 +17,20 @@
   justify-content: center;
   
 
-}
 
-.Main-Card-Div {
-  border: 2px solid rgb(22, 22, 22);
-  width: 22rem;
-  height: 13rem ;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all .6s ease-in-out;
-  /* background-color: #D4AC0D; */
-  /* background-image: linear-gradient(to right, rgb(220, 248, 12), rgb(220, 220, 176)); */
-  /* transition: width 1s, height 1s; */
-  
+.Main-Card-Div{
+    border: 2px solid rgb(22, 22, 22);
+    width: 22rem;
+    height: 16rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+    background-image: linear-gradient(to right,rgb(86, 238, 86),yellow);
+    /* transition: width 1s, height 1s; */
 
 }
+
+
 
 .linkstyles {
   text-decoration: none;
@@ -92,6 +92,8 @@
     cursor: pointer;
     margin-top: 15px;
   }
+
+
 }
 
 
