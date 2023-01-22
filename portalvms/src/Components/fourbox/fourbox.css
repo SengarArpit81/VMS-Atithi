@@ -1,3 +1,4 @@
+
 .bg-imgae {
   background: url(/public/images/bg-image6.png);
   object-fit: cover;
@@ -16,7 +17,6 @@
   justify-content: center;
   
 
-}
 
 .Main-Card-Div {
   border: 2px solid rgb(22, 22, 22);
@@ -30,7 +30,10 @@
   /* transition: width 1s, height 1s; */
   
 
+
 }
+
+
 
 .linkstyles {
   text-decoration: none !important;
@@ -95,6 +98,8 @@
     margin-top: 15px;
     margin-bottom: 10px;
   }
+
+
 }
 
 
