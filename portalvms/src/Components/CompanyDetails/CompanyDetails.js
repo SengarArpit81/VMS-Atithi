@@ -583,7 +583,7 @@ const CompanyDetails = () => {
                               >
                                 <Input
                                   type="text"
-                                  placeholder="Company Logo
+                                  placeholder="Company Logo"
                                   name="company_logo"
                                   autoComplete="off"
                                   value={values.company_logo}
