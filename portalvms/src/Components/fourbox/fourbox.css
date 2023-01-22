@@ -8,6 +8,7 @@
 
 }
 
+
 .Main-Card-Layout-Div {
   /* border: 2px solid red; */
   min-height: 90vh;
@@ -16,7 +17,7 @@
   align-items: center;
   justify-content: center;
   
-
+}
 
 .Main-Card-Div {
   border: 2px solid rgb(22, 22, 22);
