@@ -1,5 +1,6 @@
+
 .bg-imgae {
-  background: url(/public/images/bg-image4.jpg);
+  background: url(/public/images/bg-image6.png);
   object-fit: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -16,13 +17,12 @@
   justify-content: center;
   
 
-}
 
 .Main-Card-Div {
   border: 2px solid rgb(22, 22, 22);
-  width: 22rem;
-  height: 13rem ;
-  border-radius: 50px;
+  width: 15rem !important;
+  height: 12rem  !important;
+  border-radius: 40px;
   cursor: pointer;
   transition: all .6s ease-in-out;
   /* background-color: #D4AC0D; */
@@ -30,10 +30,14 @@
   /* transition: width 1s, height 1s; */
   
 
+
 }
 
+
+
 .linkstyles {
-  text-decoration: none;
+  text-decoration: none !important;
+  /* border: 2px solid rgb(22, 22, 22); */
   color: white;
   font-weight: 600;
 }
@@ -50,8 +54,8 @@
 @media (max-width:1500px) {
   .Main-Card-Div {
     /* border: 2px solid rgb(95, 13, 13); */
-    width: 22rem;
-    height: 16rem;
+    width: 17rem;
+    height: 13rem;
     /* border-radius: 10px; */
     cursor: pointer;
     margin-top: 15px;
@@ -74,11 +78,12 @@
 @media (max-width:1200px) {
   .Main-Card-Div {
     border: 2px solid rgb(95, 13, 13);
-    width: 15rem;
-    height: 13rem;
+    width: 14rem !important;
+    height: 11rem !important;
     /* border-radius: 10px; */
     cursor: pointer;
     margin-top: 15px;
+    margin-bottom: 10px;
 
   }
 }
@@ -86,12 +91,15 @@
 @media (max-width:600px) {
   .Main-Card-Div {
     border: 2px solid rgb(95, 13, 13);
-    width: 15rem;
-    height: 12rem;
+    width: 12rem !important;
+    height: 10rem !important;
     /* border-radius: 10px; */
     cursor: pointer;
     margin-top: 15px;
+    margin-bottom: 10px;
   }
+
+
 }
 
 

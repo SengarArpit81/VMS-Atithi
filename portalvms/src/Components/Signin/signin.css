@@ -1,6 +1,11 @@
+.signin-main-col{
 
+}
 .signin-col{
-    padding: 50px;
+    /* padding: 50px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    /* border: 1px solid red; */
 }
 .login-main-div{
     /* border: 2px solid #794afa; */
@@ -10,6 +15,12 @@
 }
 .forgotpass-div h6:hover{
     display: block !important;
+}
+@media (max-width:1600px)
+{
+    .signin-main-col{
+     padding: 50px !important;
+    }
 }
 @media (max-width:600px)
 {
