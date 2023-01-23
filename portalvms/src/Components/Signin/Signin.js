@@ -10,7 +10,7 @@ const Signin = () => {
   return (
     <div>
       <Row>
-        <Col span={24} className="p-5 signin-main-col" >
+        <Col span={24} className="signin-main-col">
           <Row>
             <Col span={12} xs={24} sm={24} md={12} lg={12} xl={12}>
               <div className="LoginImage-Div p-5">

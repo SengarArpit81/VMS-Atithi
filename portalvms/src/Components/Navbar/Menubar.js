@@ -21,26 +21,41 @@ const Menubar = () => {
       >
         <Container fluid>
           {/* <Navbar.Brand href="#home"> */}
-          <Link to="/" style={{textDecoration:"none"}}>
-          <div>
-            <h4 className="menubar-tag-h4">
-          <span>A</span>thithi {" "}
-         <span>B</span>ook
-         </h4>
-         </div>
-         </Link>
-            {/* VMS ATHITHI */}
-            {/* </Navbar.Brand> */}
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <div>
+              <h4 className="menubar-tag-h4">
+                <span>A</span>thithi {" "}
+                <span>B</span>ook
+              </h4>
+            </div>
+          </Link>
+          {/* VMS ATHITHI */}
+          {/* </Navbar.Brand> */}
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto px-5">
-              <Nav.Link href="#features" style={{fontWeight:"500",color:"black"}}>Home</Nav.Link>
-              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Benefits</Nav.Link>
-              <div className="d-flex justify-content-center align-items-center mx-1">
-              <Link to="/fourbox" style={{ display:"flex",fontWeight:"500",color:"black",textDecoration:"none"}}>VMS Admin</Link>
-              </div>
-              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>About us</Nav.Link>
-              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Contact us</Nav.Link>
+            <Nav className="me-auto nav-tag">
+            <Nav.Link href="#features" className="menu-list-div mt-0 p-0">
+              {/* <div className="menu-list-div"> */}
+                <Link to="/" className="menu-Link">Home</Link>
+              {/* </div> */}
+              </Nav.Link>
+              <Nav.Link href="#features" className="menu-list-div mt-0 p-0" >
+                <Link to="/fourbox" className="menu-Link ">Benefits</Link>
+                </Nav.Link>
+
+              {/* <Nav.Link href="#features" style={{fontWeight:"500",color:"black"}}>Home</Nav.Link> */}
+              {/* <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Benefits</Nav.Link> */}
+             <Nav.Link href="#features" className="menu-list-div mt-0 p-0" >
+                <Link to="/fourbox" className="menu-Link">VMS Admin</Link>
+              </Nav.Link>
+             <Nav.Link href="#features" className="menu-list-div mt-0 p-0" >
+                <Link to="/fourbox" className="menu-Link">About us</Link>
+              </Nav.Link>
+             <Nav.Link href="#features" className="menu-list-div mt-0 p-0" >
+                <Link to="/fourbox" className="menu-Link">Contact us</Link>
+              </Nav.Link>
+              {/* <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>About us</Nav.Link>
+              <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Contact us</Nav.Link> */}
 
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -58,36 +73,40 @@ const Menubar = () => {
             </Nav>
             <Nav >
               <Nav.Link href="#deets"></Nav.Link>
-              
-                <div className="d-flex justify-content-center align-items-center m-0 p-2 login-signup-main-div">
-                  <div className="link-div">
-                    <Link
-                      to="/signin"
-                      style={{
-                        textDecoration: "none",
-                        color: "rgba(0,0,0,.70)",
-                        
-                      }}
-                    >
-                      <h6 className="m-0 p-0 me-2 login-h6-tag">LOGIN</h6>
-                    </Link>
-                  </div>
-                  <div>
-                    <h6 className="m-0 p-0 login-h6-tag">/</h6>
-                  </div>
-                  <div className="">
+
+              <div className="d-flex justify-content-center align-items-center m-0 p-2 login-signup-main-div">
+              <Nav.Link href="#features" className="link-div mt-0 p-0" >
+                <div >
                   <Link
-                      to="/signup"
-                      style={{
-                        textDecoration: "none",
-                        color: "rgba(0,0,0,.70)",
-                      }}
-                    >
-                    <h6 className="mx-2 m-0 p-0 login-h6-tag">SIGNUP</h6>
-                    </Link>
-                  </div>
+                    to="/signin"
+                    style={{
+                      textDecoration: "none",
+                      color: "rgba(0,0,0,.70)",
+
+                    }}
+                  >
+                    <h6 className="m-0 p-0 me-2 login-h6-tag">LOGIN</h6>
+                  </Link>
                 </div>
-              
+                </Nav.Link>
+                <div>
+                  <h6 className="m-0 p-0 login-h6-tag">/</h6>
+                </div>
+                <Nav.Link href="#features" className="link-div mt-0 p-0" >
+                <div className="">
+                  <Link
+                    to="/signup"
+                    style={{
+                      textDecoration: "none",
+                      color: "rgba(0,0,0,.70)",
+                    }}
+                  >
+                    <h6 className="mx-2 m-0 p-0 login-h6-tag">SIGNUP</h6>
+                  </Link>
+                </div>
+                </Nav.Link>
+              </div>
+
             </Nav>
           </Navbar.Collapse>
         </Container>
