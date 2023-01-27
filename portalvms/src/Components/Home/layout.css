@@ -10,6 +10,10 @@
 .layout-link-div{
     margin-top: 70px;
 }
+.logo-div{
+    width: 50px;
+    height: 50px;
+}
 .signin-link{
     text-decoration: none;
     background-color: rgb(23, 23, 24);
@@ -55,6 +59,100 @@
 }
 .layout-left-main-col{
    
+}
+@media (max-width:1440px){
+   
+    .hero-image-div img{
+   width: 100% !important;
+   height: 80vh !important;     
+    }
+    
+}
+@media (max-width:1400px){
+   
+    .hero-image-div img{
+   width: 100% !important;
+   height: 80vh !important;     
+    }
+    
+}
+@media (max-width:1300px){
+    
+    .athithi-book-main-div{
+        
+        padding-top: 30px;
+        padding-left: 50px;
+
+        padding-right: 25px;
+    }
+    .layout-link-div{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .hero-image-div{
+
+    }
+}
+
+@media (max-width:1024px){
+    .athithi-book-main-div{
+        
+        padding-top: 30px;
+        padding-left: 30px;
+
+        padding-right: 25px;
+    }
+    .layout-link-div{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .hero-image-div img{
+        width: 100% !important;
+        height: 75vh !important;     
+         }
+}
+@media(max-width:950px){
+    .layout-heading-tag-h1{
+        color: maroon;
+        margin-left: 10px;
+        font-size: 30px;
+    }
+   
+    .logo-div{
+        width: 40px;
+        height: 40px;
+    }
+    .point-h6-tag{
+        font-size: 13px;
+    }
+    .description-span-tag{
+        font-size: 12px;
+    }
+    .layout-link-div{
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    .signin-link{
+        text-decoration: none;
+        background-color: rgb(23, 23, 24);
+        color: white;
+        height: 40px;
+        font-size: 16px;
+        width: 48%;
+        /* border: 2px solid rgb(49, 67, 233); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        font-weight: 500;
+    }
+    .signup-link{
+        height: 40px; 
+    }
+    .hero-image-div img{
+        width: 100% !important;
+        height: 82vh !important;     
+         }
 }
 
 @media (max-width:767px){

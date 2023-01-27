@@ -25,7 +25,8 @@ const Layoyt = () => {
                   <div>
                     <img
                       src="images/logo2.jpg"
-                      style={{ width: "50px", height: "50px" }}
+                      className="logo-div"
+                      
                     />
                   </div>
                   <div
@@ -37,8 +38,8 @@ const Layoyt = () => {
                 </div>
                 <div className="mt-4">
                   <div>
-                    <h6 className="fw-bold">Your Privacy is our priority</h6>
-                    <span style={{color:"gray"}}>
+                    <h6 className="fw-bold point-h6-tag" >Your Privacy is our priority</h6>
+                    <span style={{color:"gray"}} className="description-span-tag">
 
                       Meet all compliances, manage workplace capacity and easily
                       extract reports for contact tracing with our visitor
@@ -46,20 +47,20 @@ const Layoyt = () => {
                     </span>
                   </div>
                   <div className="mt-4">
-                    <h6 className="fw-bold">
+                    <h6 className="fw-bold point-h6-tag">
                       All your data, secured with us for ease of access
                     </h6>
-                    <span style={{color:"gray"}}>
+                    <span style={{color:"gray"}} className="description-span-tag">
                       Manage your account securely from anywhere on the globe
                       with our secured cloud based visitor management system!
                     </span>
                   </div>
                   <div className="mt-4">
-                    <h6 className="fw-bold">
+                    <h6 className="fw-bold point-h6-tag">
                       Extensive safety and security measures for both your
                       employees and your visitors
                     </h6>
-                    <span style={{color:"gray"}}>
+                    <span style={{color:"gray"}} className="description-span-tag">
                       Use top of the notch features including health declaration
                       for your visitors and a zero contact check-in with our
                       contact-less visitor management system!
@@ -87,8 +88,8 @@ const Layoyt = () => {
               xl={12}
               className="p-5 Layout-Imge-Col"
             >
-              <div className="h-100">
-                <img src="/images/Aavo-Padharo.png" className="img-fluid" />
+              <div className="hero-image-div">
+                <img src="/images/Aavo-Padharo.png"  className="img-fluid"/>
               </div>
             </Col>
           </Row>

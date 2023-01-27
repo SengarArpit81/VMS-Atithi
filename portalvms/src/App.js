@@ -22,7 +22,7 @@ function App() {
       <Menubar />
       
       </div>
-      <div style={{ minHeight: "90vh" }} className="Main-Layoyt-Div">
+      <div style={{ minHeight: "90vh"}} className="Main-Layoyt-Div" >
         
           <Routes>
             <Route exact path="/" element={<Layoyt />} />
