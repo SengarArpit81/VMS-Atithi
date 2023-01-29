@@ -12,6 +12,9 @@ import CompanyDetails from "./Components/CompanyDetails/CompanyDetails";
 import Approvedvisitors from "./Components/Approved Visitors/approvedvisitors";
 import AddVisitors from "./Components/Add Visitors/AddVisitors";
 import Rejectedvisitors from "./Components/RejectedVis/RejectedVisitor";
+import Aboutus from "./Components/AboutUS/Aboutus";
+import Contactus from "./Components/ContactUS/Contactus";
+import Benefits from "./Components/Benifits/Benefits";
 // https://doccure-react.dreamguystech.com/template/login#0
 
 function App() {
@@ -28,13 +31,16 @@ function App() {
             <Route exact path="/" element={<Layoyt />} />
             <Route exact path="/signin" element={<Signin />} />
             <Route exact path="/signup" element={<Signup />} />
-
+           <Route exact path="/benefits" element={<Benefits />} />
             <Route exact path="/fourbox" element={<Fourbox/>} />
+            <Route exact path="/aboutus" element={<Aboutus/>}/>
+            <Route exact path="/contactus" element={<Contactus/>} />
 
             <Route exact path="/companydetails" element={<CompanyDetails />} />
             <Route exact path="/approvedvisitors" element={<Approvedvisitors />} />
             <Route exact path="/addvisitors" element={<AddVisitors/>} />
             <Route exact path="/rejectedlist" element={<Rejectedvisitors/>} />
+
 
           </Routes>
       

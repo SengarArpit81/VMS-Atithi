@@ -39,7 +39,7 @@
 }
 .menu-Link:hover{
   font-weight: 500;
-  color: black;
+  color: black !important;
   text-decoration: none;
   /* fontWeight:"500",color:"black",textDecoration:"none" */
 }
