@@ -29,9 +29,9 @@
     font-weight: 500;
 }
 .signin-link:hover{
-    color: white;
+    color: white !important;
     /* background-color: rgb(29, 36, 26); */
-    background: linear-gradient(90deg, rgb(39, 39, 41) 0%, rgb(77, 196, 53) 35%, rgb(3, 29, 36) 100%);
+    background: linear-gradient(90deg, rgb(39, 39, 41) 0%, rgb(77, 196, 53) 35%, rgb(3, 29, 36) 100%) !important;
     border: none;
 }
 .signup-link{
@@ -50,7 +50,7 @@
 
 }
 .signup-link:hover{
-    color: white;
+    color: white !important;
 }
 
 .layout-main-col{

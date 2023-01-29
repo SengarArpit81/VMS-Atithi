@@ -12,7 +12,7 @@ const Footermain = () => {
             <Row span={24} className="d-flex cotainer">
               <Col span={8} xs={24} sm={24} md={8} lg={8}>
                 <div className="box">
-                  <h3>About US</h3>
+                  <h3>ATHITHI BOOK</h3>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Acc exer fsdfsfsf sfsffs vdgdgd dgdgdg
@@ -34,16 +34,16 @@ const Footermain = () => {
                       Home
                     </Link>
                     {/* </div> */}
-                    <Link to="/fourbox" className="Footer-menu-Link ">
+                    <Link to="/benefits" className="Footer-menu-Link ">
                       Benefits
                     </Link>
                     <Link to="/fourbox" className="Footer-menu-Link">
                       Services
                     </Link>
-                    <Link to="/fourbox" className="Footer-menu-Link">
+                    <Link to="/aboutus" className="Footer-menu-Link">
                       About us
                     </Link>
-                    <Link to="/fourbox" className="Footer-menu-Link">
+                    <Link to="/contactus" className="Footer-menu-Link">
                       Contact us
                     </Link>
                   </div>

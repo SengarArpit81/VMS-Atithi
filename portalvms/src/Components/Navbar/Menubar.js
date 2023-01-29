@@ -40,7 +40,7 @@ const Menubar = () => {
               {/* </div> */}
               </Nav.Link>
               <Nav.Link href="#features" className="menu-list-div mt-0 p-0" >
-                <Link to="/fourbox" className="menu-Link ">Benefits</Link>
+                <Link to="/benefits" className="menu-Link ">Benefits</Link>
                 </Nav.Link>
 
               {/* <Nav.Link href="#features" style={{fontWeight:"500",color:"black"}}>Home</Nav.Link> */}
@@ -49,10 +49,10 @@ const Menubar = () => {
                 <Link to="/fourbox" className="menu-Link">VMS Admin</Link>
               </Nav.Link>
              <Nav.Link href="#features" className="menu-list-div mt-0 p-0" >
-                <Link to="/fourbox" className="menu-Link">About us</Link>
+                <Link to="/aboutus" className="menu-Link">About us</Link>
               </Nav.Link>
              <Nav.Link href="#features" className="menu-list-div mt-0 p-0" >
-                <Link to="/fourbox" className="menu-Link">Contact us</Link>
+                <Link to="/contactus" className="menu-Link">Contact us</Link>
               </Nav.Link>
               {/* <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>About us</Nav.Link>
               <Nav.Link href="#pricing" style={{fontWeight:"500",color:"black"}}>Contact us</Nav.Link> */}
