@@ -1,0 +1,117 @@
+.main-div{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.heding-tag-h1{
+    color: maroon;
+    font-family: sans-serif;
+    /* text-transform: capitalize; */
+}
+.second-heading-tag-h3{
+
+}
+
+.heading-span-tag{
+    color: #E95F04;
+    font-family: cursive;
+    /* style={{ color: "", fontFamily: "cursive" }} */
+}
+
+.question-tag-h1{
+    color: #808B96;
+    font-family: initial;
+}
+.answer-tag-h5{
+    color: #34495E;
+    line-height: 30px;
+    font-family: sans-serif;
+
+}
+.li-tag{
+    font-size: 20px;
+    color: #34495E;
+    font-family: sans-serif;
+}
+
+.sub-heading-tag-h5{
+    color: maroon;
+}
+
+@media (max-width:900px) {
+    .heding-tag-h1{
+        font-size: 28px !important;
+    }
+    .second-heading-tag-h3{
+        font-size: 18px !important;
+        text-align: center;
+    }
+    .heading-span-tag{
+        color: #E95F04;
+        font-family: cursive;
+        font-size: 18px !important;
+        /* style={{ color: "", fontFamily: "cursive" }} */
+    }
+}
+
+@media (max-width:600px) {
+    .heding-tag-h1{
+        font-size: 24px !important;
+    }
+    .second-heading-tag-h3{
+        font-size: 16px !important;
+        text-align: center;
+    }
+    .heading-span-tag{
+        color: #E95F04;
+        font-family: cursive;
+        font-size: 16px !important;
+        /* style={{ color: "", fontFamily: "cursive" }} */
+    }
+    .question-tag-h1{
+        font-size: 23px;
+    }
+    .answer-tag-h5{
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .li-tag{
+        font-size: 17px;
+        color: #34495E;
+        font-family: sans-serif;
+    }
+    .sub-heading-tag-h5{
+        color: maroon;
+        font-size: 18px;
+    }
+}
+@media (max-width:400px) {
+    .heding-tag-h1{
+        font-size: 18px !important;
+    }
+    .second-heading-tag-h3{
+        font-size: 13px !important;
+        text-align: center;
+    }
+    .heading-span-tag{
+        color: #E95F04;
+        font-family: cursive;
+        font-size: 13px !important;
+        /* style={{ color: "", fontFamily: "cursive" }} */
+    }
+    .question-tag-h1{
+        font-size: 17px;
+    }
+    .answer-tag-h5{
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .li-tag{
+        font-size: 15px;
+        color: #34495E;
+        font-family: sans-serif;
+    }
+    .sub-heading-tag-h5{
+        color: maroon;
+        font-size: 17px;
+    }
+}
