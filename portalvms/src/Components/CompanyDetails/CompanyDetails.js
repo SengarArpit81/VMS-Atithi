@@ -1,5 +1,5 @@
-import { Col, Row,Input } from "antd";
-import React from "react";
+import { Col, Row, Input } from "antd";
+import React, { useState } from "react";
 import Button from "react-bootstrap/esm/Button";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
@@ -18,6 +18,10 @@ const initialValues = {
 };
 
 const CompanyDetails = () => {
+ const [conferenceHallYesNoState, setconferenceHallYesNoState] = useState()
+ const [conferenceHallRentYesNoState, setconferenceHallRentYesNoState] = useState()
+
+
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
       initialValues: initialValues,
@@ -27,6 +31,9 @@ const CompanyDetails = () => {
         console.log("Formik value", values);
       },
     });
+
+   
+console.log("setconferenceHallYesNoState",conferenceHallYesNoState)
 
   return (
     <div>
@@ -43,13 +50,13 @@ const CompanyDetails = () => {
           <form onSubmit={handleSubmit}>
             <Row>
               <Col span={24} className="p-2 form-control" >
-              
+
                 <Row
-                //   style={{ border: "1px dotted black", borderRadius: "5px" }}
+                  //   style={{ border: "1px dotted black", borderRadius: "5px" }}
                   className="p-1 form-control"
                 >
                   <Col span={24}>
-                  <h6 style={{color:"maroon"}}>Primary Information</h6>
+                    <h6 style={{ color: "maroon" }}>Primary Information</h6>
                     <Row>
                       <Col span={24} className="w-100 d-flex">
                         <Row className="w-100">
@@ -59,7 +66,7 @@ const CompanyDetails = () => {
                             sm={24}
                             md={8}
                             lg={8}
-                            // style={{ border: "1px solid red" }}
+                          // style={{ border: "1px solid red" }}
                           >
                             <Row>
                               <Col
@@ -76,15 +83,15 @@ const CompanyDetails = () => {
                                   onBlur={handleBlur}
                                   style={{ width: "99%", height: "36px",borderRadius:"5px" }}
                                 /> */}
-                                <Input 
-                                type="text"
-                                placeholder="Company Name"
-                                name="company_n"
-                                autoComplete="off"
-                                value={values.company_n}
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                style={{ width: "99%", height: "36px",borderRadius:"5px" }}
+                                <Input
+                                  type="text"
+                                  placeholder="Company Name"
+                                  name="company_n"
+                                  autoComplete="off"
+                                  value={values.company_n}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  style={{ width: "99%", height: "36px", borderRadius: "5px" }}
                                 />
                               </Col>
                               <Col style={{ height: "20px" }}>
@@ -175,7 +182,7 @@ const CompanyDetails = () => {
                             sm={24}
                             md={8}
                             lg={8}
-                            // style={{ border: "1px solid red" }}
+                          // style={{ border: "1px solid red" }}
                           >
                             <Row>
                               <Col
@@ -282,7 +289,7 @@ const CompanyDetails = () => {
                             sm={24}
                             md={8}
                             lg={8}
-                            // style={{ border: "1px solid red" }}
+                          // style={{ border: "1px solid red" }}
                           >
                             <Row>
                               <Col
@@ -382,11 +389,11 @@ const CompanyDetails = () => {
                 </Row>
 
                 <Row
-                //   style={{ border: "1px dotted black", borderRadius: "5px" }}
+                  //   style={{ border: "1px dotted black", borderRadius: "5px" }}
                   className="p-1 mt-2 form-control"
                 >
                   <Col span={24}>
-                <h6 style={{color:"maroon"}} >Primary Contact Information</h6>
+                    <h6 style={{ color: "maroon" }} >Primary Contact Information</h6>
 
 
                     <Row>
@@ -398,23 +405,23 @@ const CompanyDetails = () => {
                             sm={24}
                             md={8}
                             lg={8}
-                            // style={{ border: "1px solid red" }}
+                          // style={{ border: "1px solid red" }}
                           >
                             <Row>
                               <Col
                                 span={24}
                                 style={{ flexDirection: "column" }}
                               >
-                                
-                                <Input 
-                                type="text"
-                                placeholder="Company Hr Name"
-                                name="company_hr"
-                                autoComplete="off"
-                                value={values.company_hr}
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                style={{ width: "99%", height: "36px"}}
+
+                                <Input
+                                  type="text"
+                                  placeholder="Company Hr Name"
+                                  name="company_hr"
+                                  autoComplete="off"
+                                  value={values.company_hr}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  style={{ width: "99%", height: "36px" }}
                                 />
                               </Col>
                               <Col style={{ height: "20px" }}>
@@ -508,7 +515,7 @@ const CompanyDetails = () => {
                             sm={24}
                             md={8}
                             lg={8}
-                            // style={{ border: "1px solid red" }}
+                          // style={{ border: "1px solid red" }}
                           >
                             <Row>
                               <Col
@@ -606,16 +613,16 @@ const CompanyDetails = () => {
                     </Row>
 
 
-                    
+
                   </Col>
                 </Row>
 
                 <Row
-                //   style={{ border: "1px solid gray", borderRadius: "5px" }}
+                  //   style={{ border: "1px solid gray", borderRadius: "5px" }}
                   className="p-1 mt-2 form-control"
                 >
                   <Col span={24}>
-                <h6 style={{color:"maroon"}} >Primary Addresss Information</h6>
+                    <h6 style={{ color: "maroon" }} >Primary Addresss Information</h6>
 
                     <Row>
                       <Col span={24} className="w-100 d-flex">
@@ -626,23 +633,23 @@ const CompanyDetails = () => {
                             sm={24}
                             md={24}
                             lg={24}
-                            // style={{ border: "1px solid red" }}
+                          // style={{ border: "1px solid red" }}
                           >
                             <Row>
                               <Col
                                 span={24}
                                 style={{ flexDirection: "column" }}
                               >
-                              
-                                <Input 
-                                type="text"
-                                placeholder="Enter Company Pramry Address"
-                                name="company_n"
-                                autoComplete="off"
-                                value={values.company_n}
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                style={{ height: "36px" }}
+
+                                <Input
+                                  type="text"
+                                  placeholder="Enter Company Pramry Address"
+                                  name="company_n"
+                                  autoComplete="off"
+                                  value={values.company_n}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  style={{ height: "36px" }}
                                 />
                               </Col>
                               <Col style={{ height: "20px" }}>
@@ -733,7 +740,7 @@ const CompanyDetails = () => {
                             sm={24}
                             md={8}
                             lg={8}
-                            // style={{ border: "1px solid red" }}
+                          // style={{ border: "1px solid red" }}
                           >
                             <Row>
                               <Col
@@ -941,11 +948,11 @@ const CompanyDetails = () => {
 
 
                 <Row
-                //   style={{ border: "1px dotted black", borderRadius: "5px" }}
+                  //   style={{ border: "1px dotted black", borderRadius: "5px" }}
                   className="p-1 mt-2 form-control"
                 >
                   <Col span={24}>
-                <h6 style={{color:"maroon"}} >Primary Location Information</h6>
+                    <h6 style={{ color: "maroon" }} >Primary Location Information</h6>
 
                     <Row>
                       <Col span={24} className="w-100 d-flex">
@@ -956,26 +963,26 @@ const CompanyDetails = () => {
                             sm={24}
                             md={8}
                             lg={8}
-                            // style={{ border: "1px solid red" }}
+                          // style={{ border: "1px solid red" }}
                           >
                             <Row>
                               <Col
                                 span={24}
                                 style={{ flexDirection: "column" }}
                               >
-                                
-                                <Input 
-                                type="text"
 
-                                placeholder="Society Name"
+                                <Input
+                                  type="text"
 
-                         
-                                name="Sociaty_Name"
-                                autoComplete="off"
-                                value={values.Sociaty_Name}
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                style={{ width: "99%", height: "36px"}}
+                                  placeholder="Society Name"
+
+
+                                  name="Sociaty_Name"
+                                  autoComplete="off"
+                                  value={values.Sociaty_Name}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  style={{ width: "99%", height: "36px" }}
                                 />
                               </Col>
                               <Col style={{ height: "20px" }}>
@@ -1066,7 +1073,7 @@ const CompanyDetails = () => {
                             sm={24}
                             md={8}
                             lg={8}
-                            // style={{ border: "1px solid red" }}
+                          // style={{ border: "1px solid red" }}
                           >
                             <Row>
                               <Col
@@ -1167,24 +1174,394 @@ const CompanyDetails = () => {
                     </Row>
 
 
-                    
+
                   </Col>
                 </Row>
+
+                <Row className="p-1 mt-2">
+                  <Col>
+                    <div>
+                      <h6>Do you have conference hall ?</h6>
+                    </div>
+                    <div className="d-flex">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1"  onClick={(e)=>setconferenceHallYesNoState(true)}/>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check ms-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2"   onClick={(e)=>setconferenceHallYesNoState(false)}/>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              { conferenceHallYesNoState == true ? <div>
+
+                <Row
+                  //   style={{ border: "1px dotted black", borderRadius: "5px" }}
+                  className="p-1 mt-2 form-control"
+                >
+                  <Col span={24}>
+                    <h6 style={{ color: "maroon" }} >Primary Conference Hall Information</h6>
+
+                    <Row>
+                      <Col span={24} className="w-100 d-flex">
+                        <Row className="w-100">
+                          <Col
+                            span={8}
+                            xs={24}
+                            sm={24}
+                            md={8}
+                            lg={8}
+                          // style={{ border: "1px solid red" }}
+                          >
+                            <Row>
+                              <Col
+                                span={24}
+                                style={{ flexDirection: "column" }}
+                              >
+
+                                <Input
+                                  type="text"
+
+                                  placeholder="Society Name"
+
+
+                                  name="Sociaty_Name"
+                                  autoComplete="off"
+                                  value={values.Sociaty_Name}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  style={{ width: "99%", height: "36px" }}
+                                />
+                              </Col>
+                              <Col style={{ height: "20px" }}>
+                                {errors.Sociaty_Name && touched.Sociaty_Name ? (
+                                  <p className="form-error">
+                                    {errors.Sociaty_Name}
+                                  </p>
+                                ) : null}
+                              </Col>
+                            </Row>
+                          </Col>
+                          <Col
+                            span={8}
+                            xs={24}
+                            sm={24}
+                            md={8}
+                            lg={8}
+                            className="second-main-Col"
+                          >
+                            <Row>
+                              <Col
+                                span={24}
+                                style={{ flexDirection: "column" }}
+                              >
+                                <Input
+                                  type="text"
+                                  placeholder="Building Name"
+                                  name="Building_Name"
+                                  autoComplete="off"
+                                  value={values.Building_Name}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  className="secod-col-input-box"
+                                />
+                              </Col>
+                              <Col style={{ height: "20px" }}>
+                                {errors.Building_Name && touched.Building_Name ? (
+                                  <p className="form-error form-error-col-p-tag">
+                                    {errors.Building_Name}
+                                  </p>
+                                ) : null}
+                              </Col>
+                            </Row>
+                          </Col>
+                          <Col
+                            span={8}
+                            xs={24}
+                            sm={24}
+                            md={8}
+                            lg={8}
+                            className="second-main-Col"
+                          >
+                            <Row>
+                              <Col
+                                span={24}
+                                style={{ flexDirection: "column" }}
+                              >
+                                <Input
+                                  type="text"
+                                  placeholder="Enter Building Floor Number"
+                                  name="Flour_Number"
+                                  autoComplete="off"
+                                  value={values.Flour_Number}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  className="secod-col-input-box"
+                                />
+                              </Col>
+                              <Col style={{ height: "20px" }}>
+                                {errors.Flour_Number && touched.Flour_Number ? (
+                                  <p className="form-error form-error-col-p-tag">
+                                    {errors.Flour_Number}
+                                  </p>
+                                ) : null}
+                              </Col>
+                            </Row>
+                          </Col>
+                        </Row>
+                      </Col>
+                    </Row>
+
+                    <Row className="mt-2">
+                      <Col span={24} className="w-100 d-flex">
+                        <Row className="w-100">
+                          <Col
+                            span={8}
+                            xs={24}
+                            sm={24}
+                            md={8}
+                            lg={8}
+                          // style={{ border: "1px solid red" }}
+                          >
+                            <Row>
+                              <Col
+                                span={24}
+                                style={{ flexDirection: "column" }}
+                              >
+                                <Input
+                                  type="text"
+                                  placeholder="Enter Flat Number"
+                                  name="flat_Number"
+                                  autoComplete="off"
+                                  value={values.flat_Number}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  style={{ width: "98%", height: "36px" }}
+                                />
+                              </Col>
+                              <Col style={{ height: "20px" }}>
+                                {errors.flat_Number && touched.flat_Number ? (
+                                  <p className="form-error">
+                                    {errors.flat_Number}
+                                  </p>
+                                ) : null}
+                              </Col>
+                            </Row>
+                          </Col>
+                        </Row>
+                      </Col>
+                    </Row>
+                  </Col>
+                </Row>
+
+                <Row className="p-1 mt-2">
+                  <Col>
+                    <div>
+                      <h6>Do you want to rent your conference hall ?</h6>
+                    </div>
+                    <div className="d-flex">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3" onClick={()=>setconferenceHallRentYesNoState(true)}/>
+                        <label class="form-check-label" for="flexRadioDefault3">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check ms-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault4" onClick={()=>setconferenceHallRentYesNoState(false)} />
+                        <label class="form-check-label" for="flexRadioDefault4">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+                {conferenceHallRentYesNoState == true ?
+                 <div>
+ <Row
+                  //   style={{ border: "1px dotted black", borderRadius: "5px" }}
+                  className="p-1 mt-2 form-control"
+                >
+                  <Col span={24}>
+                    <h6 style={{ color: "maroon" }} >Primary Rent Amount of Conference Hall</h6>
+
+                    <Row>
+                      <Col span={24} className="w-100 d-flex">
+                        <Row className="w-100">
+                          <Col
+                            span={8}
+                            xs={24}
+                            sm={24}
+                            md={8}
+                            lg={8}
+                          // style={{ border: "1px solid red" }}
+                          >
+                            <Row>
+                              <Col
+                                span={24}
+                                style={{ flexDirection: "column" }}
+                              >
+
+                                <Input
+                                  type="text"
+
+                                  placeholder="Society Name"
+
+
+                                  name="Sociaty_Name"
+                                  autoComplete="off"
+                                  value={values.Sociaty_Name}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  style={{ width: "99%", height: "36px" }}
+                                />
+                              </Col>
+                              <Col style={{ height: "20px" }}>
+                                {errors.Sociaty_Name && touched.Sociaty_Name ? (
+                                  <p className="form-error">
+                                    {errors.Sociaty_Name}
+                                  </p>
+                                ) : null}
+                              </Col>
+                            </Row>
+                          </Col>
+                          <Col
+                            span={8}
+                            xs={24}
+                            sm={24}
+                            md={8}
+                            lg={8}
+                            className="second-main-Col"
+                          >
+                            <Row>
+                              <Col
+                                span={24}
+                                style={{ flexDirection: "column" }}
+                              >
+                                <Input
+                                  type="text"
+                                  placeholder="Building Name"
+                                  name="Building_Name"
+                                  autoComplete="off"
+                                  value={values.Building_Name}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  className="secod-col-input-box"
+                                />
+                              </Col>
+                              <Col style={{ height: "20px" }}>
+                                {errors.Building_Name && touched.Building_Name ? (
+                                  <p className="form-error form-error-col-p-tag">
+                                    {errors.Building_Name}
+                                  </p>
+                                ) : null}
+                              </Col>
+                            </Row>
+                          </Col>
+                          <Col
+                            span={8}
+                            xs={24}
+                            sm={24}
+                            md={8}
+                            lg={8}
+                            className="second-main-Col"
+                          >
+                            <Row>
+                              <Col
+                                span={24}
+                                style={{ flexDirection: "column" }}
+                              >
+                                <Input
+                                  type="text"
+                                  placeholder="Enter Building Floor Number"
+                                  name="Flour_Number"
+                                  autoComplete="off"
+                                  value={values.Flour_Number}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  className="secod-col-input-box"
+                                />
+                              </Col>
+                              <Col style={{ height: "20px" }}>
+                                {errors.Flour_Number && touched.Flour_Number ? (
+                                  <p className="form-error form-error-col-p-tag">
+                                    {errors.Flour_Number}
+                                  </p>
+                                ) : null}
+                              </Col>
+                            </Row>
+                          </Col>
+                        </Row>
+                      </Col>
+                    </Row>
+
+                    <Row className="mt-2">
+                      <Col span={24} className="w-100 d-flex">
+                        <Row className="w-100">
+                          <Col
+                            span={8}
+                            xs={24}
+                            sm={24}
+                            md={8}
+                            lg={8}
+                          // style={{ border: "1px solid red" }}
+                          >
+                            <Row>
+                              <Col
+                                span={24}
+                                style={{ flexDirection: "column" }}
+                              >
+                                <Input
+                                  type="text"
+                                  placeholder="Enter Flat Number"
+                                  name="flat_Number"
+                                  autoComplete="off"
+                                  value={values.flat_Number}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  style={{ width: "98%", height: "36px" }}
+                                />
+                              </Col>
+                              <Col style={{ height: "20px" }}>
+                                {errors.flat_Number && touched.flat_Number ? (
+                                  <p className="form-error">
+                                    {errors.flat_Number}
+                                  </p>
+                                ) : null}
+                              </Col>
+                            </Row>
+                          </Col>
+                        </Row>
+                      </Col>
+                    </Row>
+                  </Col>
+                </Row>
+                </div> : ""}
+               
+              </div>
+            :""  
+            }
                 
+
                 <Row className="mt-3">
-                    <Col span={24} className="d-flex justify-content-between">
+                  <Col span={24} className="d-flex justify-content-between">
                     <div>
                       <Link to="/companydetail">
-                         <Button style={{backgroundColor:"maroon"}}>Back</Button>
-                         </Link>
+                        <Button style={{ backgroundColor: "maroon" }}>Back</Button>
+                      </Link>
                     </div>
                     <div>
-                    <Button style={{backgroundColor:"maroon"}}>Save</Button>
+                      <Button style={{ backgroundColor: "maroon" }}>Save</Button>
 
                     </div>
-                    </Col>
+                  </Col>
                 </Row>
-                
+
               </Col>
             </Row>
             {/* <Row>
