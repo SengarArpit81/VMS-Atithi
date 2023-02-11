@@ -66,7 +66,7 @@ const Fourbox = () => {
 
             <Col span={6} xs={24} sm={12} md={12} lg={6} xl={6} className="d-flex justify-content-center align-items-center">
               <div>
-              <Link className="linkstyles" to ="/companydetails" >
+              <Link className="linkstyles" to ="/addcompanydetails" >
                 <Card className="Main-Card-Div Animation-Card-Right Main-Card-Div-Left" >
                   <Card.Body className="d-flex justify-content-center align-items-center " >
                     <Card.Img src="images/company11.jfif" style={{ zIndex: "1" }} className='w-75' />

@@ -40,6 +40,9 @@ const Menubar = () => {
               {/* </div> */}
               </Nav.Link>
               <Nav.Link href="#features" className="menu-list-div mt-0 p-0" >
+                <Link to="/companydetail" className="menu-Link ">Company Detail</Link>
+                </Nav.Link>
+              <Nav.Link href="#features" className="menu-list-div mt-0 p-0" >
                 <Link to="/benefits" className="menu-Link ">Benefits</Link>
                 </Nav.Link>
 

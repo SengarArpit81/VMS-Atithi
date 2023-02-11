@@ -33,9 +33,9 @@ const CompanyDetails = () => {
       <Row>
         <Col span={24} className="p-2 container">
           <Row>
-            <Col span={24} className=" d-flex justify-content-center">
+            <Col span={24} className=" d-flex justify-content-start">
               <div className="">
-                <h4 className="company-heading-tag-h4">Company Details</h4>
+                <h4 className="company-heading-tag-h4">Add Company Details</h4>
               </div>
             </Col>
           </Row>
@@ -1174,7 +1174,9 @@ const CompanyDetails = () => {
                 <Row className="mt-3">
                     <Col span={24} className="d-flex justify-content-between">
                     <div>
+                      <Link to="/companydetail">
                          <Button style={{backgroundColor:"maroon"}}>Back</Button>
+                         </Link>
                     </div>
                     <div>
                     <Button style={{backgroundColor:"maroon"}}>Save</Button>
