@@ -1,0 +1,167 @@
+.Add-Edit-btn {
+	background-color: #720c20;
+	border: none;
+	border-radius: 4px;
+	height: 40px;
+	width: 200px;
+    font-size:16px;
+    font-weight: 500;
+}
+
+Table,
+th {
+	color: #720c20;
+	font-weight: 500;
+	position: absolute;
+	position: sticky;
+}
+
+Table,
+td {
+	font-weight: 500;
+	font-size: 14px;
+	position: relative;
+	text-align: center;
+
+}
+
+/* toggle css start */
+
+.switch {
+	position: relative;
+	display: block;
+	/* vertical-align: top; */
+	width: 50px;
+	height: 22px;
+	padding: 6px;
+	margin: 0 10px 10px 0;
+	/* background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px); */
+	/* background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px); */
+	border-radius: 18px;
+	/* box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05); */
+	cursor: pointer;
+	box-sizing: content-box;
+}
+
+.switch-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	box-sizing: content-box;
+}
+
+.switch-label {
+	position: relative;
+	display: block;
+	height: inherit;
+	font-size: 10px;
+	text-transform: uppercase;
+	background: #a5a5a5;
+	border-radius: inherit;
+	/* box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15); */
+	box-sizing: content-box;
+}
+
+.switch-label:before,
+.switch-label:after {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
+	box-sizing: content-box;
+}
+
+.switch-label:before {
+	content: attr(data-off);
+	right: 7px;
+	color: white;
+	font-weight: 500;
+	/* text-shadow: 0 1px rgba(255, 255, 255, 0.5); */
+}
+
+.switch-label:after {
+	content: attr(data-on);
+	left: 9px;
+	color: #FFFFFF;
+	/* text-shadow: 0 1px rgba(0, 0, 0, 0.2); */
+	opacity: 0;
+}
+
+.switch-input:checked~.switch-label {
+	background: #720c20;
+	/* box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2); */
+}
+
+.switch-input:checked~.switch-label:before {
+	opacity: 0;
+}
+
+.switch-input:checked~.switch-label:after {
+	opacity: 1;
+}
+
+.switch-handle {
+	position: absolute;
+	top: -0.7px;
+	left: 10px;
+	width: 28px;
+	height: 32px;
+	/* background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0); */
+	/* background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0); */
+	border-radius: 100%;
+	/* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.switch-handle:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -13px;
+	width: 14px;
+	height: 14px;
+	/* background: linear-gradient(to bottom, #eeeeee, #494848); */
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+	border-radius: 12px;
+	/* box-shadow: inset 0 1px rgba(0, 0, 0, 0.02); */
+}
+
+.switch-input:checked~.switch-handle {
+	left: 36px;
+	/* box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2); */
+}
+
+/* Transition
+========================== */
+.switch-label,
+.switch-handle {
+	transition: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+}
+
+.CommunicationScroll {
+	overflow-y: scroll;
+	height: 70vh;
+	background-color: #ffffff;
+}
+
+/* toggle css end */
+
+
+@media (max-width:600px) {
+	.Add-Edit-btn {
+		background-color: #720c20;
+		border: none;
+		border-radius: 4px;
+		height: 40px;
+		width: 100px;
+		font-size: 9px;
+	}
+}
