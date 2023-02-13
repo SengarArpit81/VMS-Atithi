@@ -1,0 +1,337 @@
+.ConferenceHeadingDiv {
+    height: 100px !important;
+}
+
+.company-heading-tag-h1 {
+    /* font-size: 30px; */
+    font-weight: 700 !important;
+    font-family: serif !important;
+    color: maroon;
+}
+
+
+/* search component style start kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*/
+.checkBox-text-Div {
+    font-weight: 500 !important;
+}
+
+@media (max-width:600px) {
+    .title-taggs-H1 {
+        font-size: 18px;
+    }
+
+    .checkBox-text-Div {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        /* border: 1px solid red; */
+        margin-top: 4px;
+    }
+
+}
+
+
+/* input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    /* Chrome, Safari, Opera 
+    -moz-appearance: checkbox;
+    /* Firefox */
+/* -ms-appearance: checkbox; */
+/* not currently supported 
+  }
+  
+  input[type="checkbox"] {
+    padding: 10px !important;
+    /* -webkit-appearance:none; 
+  
+  }
+  
+  .Main-checkBox-Div {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .Serach-Input-Box-Div {
+    padding-left: 0px;
+    /* padding-right: 10px; 
+  }
+  
+  .Serach-Text-Div {
+    padding-left: 0px;
+  }
+  
+  @media (max-width:1000px) {
+    .checkBox-text-Div {
+      font-size: 12px !important;
+      /* font-weight: 500 !important; 
+    }
+  
+    .title-taggs-H1 {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width:800px) {
+    .checkBox-text-Div {
+      font-size: 13px !important;
+      /* font-weight: 500 !important; 
+    }
+  
+    .title-taggs-H1 {
+      font-size: 30px;
+    }
+  }
+  
+  @media (min-width:600px) and (max-width:767px) {
+    .Main-checkBox-Div {
+      /* border: 1px solid red; 
+      display: flex;
+      justify-content: start;
+  
+    }
+  
+    .checkBox-text-Div-Input {
+      padding-right: 22px;
+    }
+  }
+  
+  @media (max-width:600px) {
+    .checkBox-text-Div {
+      font-size: 14px !important;
+      /* font-weight: 500 !important; 
+    }
+  
+    .checkBox-text-Div-Input {
+      padding-right: 6px;
+    }
+  
+    .Serach-Input-Box-Div {}
+    .title-taggs-H1{
+        font-size: 20px;
+    }
+  }
+  
+  @media (max-width:380px) {
+    .checkBox-text-Div {
+      font-size: 9px !important;
+      font-weight: 500 !important;
+    }
+  
+    .Serach-Input-Box-Div {
+      padding-left: 0px;
+      padding-right: 10px;
+    }
+  
+    .Serach-Text-Div {
+      padding-left: 0px;
+    }
+  
+    .checkBox-text-Div-Input {
+      padding-right: 0px;
+    }
+    .Serach-Input-Box-Div input::-webkit-input-placeholder{
+      font-size: 12px;
+    }
+  } */
+
+/* serch component style end */
+
+/* fafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.retired-Life-h1-tag {
+    color: #B06A0A;
+}
+
+.retired-Life-h1-tag span {
+    color: black;
+}
+
+.register-btn {
+    color: #720C20;
+    font-weight: 600;
+    height: 40px !important;
+    width: 160px;
+    /* font-family: sans-serif; */
+}
+
+.Book-Seminar-Hall-Div {
+    display: flex;
+    justify-content: end;
+}
+
+.bttn-info {
+    height: 30px;
+}
+
+/* } */
+.register-btn:hover {
+    background-color: whitesmoke;
+    color: brown;
+    font-weight: 700;
+}
+
+.adviser-tag-h4 {
+    color: #707070;
+}
+
+.adviser-tag-h4 span {
+    color: #720C20;
+    font-weight: 600;
+}
+
+.date-Time-tag-h4 {
+    color: #595959;
+}
+
+.Qr-Code-Main-Div {
+    height: 95px !important;
+    width: 15%;
+    margin-top: 8px;
+}
+
+.QR-code-inner {
+    height: 95px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+@media (max-width:1000px) {
+    .Qr-Code-Main-Div {
+        height: 80px !important;
+        width: 15%;
+        /* margin-top: 3px; */
+
+    }
+
+    .QR-code-inner {
+        height: 80px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .Qr-code-text-h6 {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:767px) {
+    
+    .Book-Seminar-Hall-Div {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .register-btn {
+        width: 160px;
+        font-weight: 600;
+        height: 36px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+
+
+    .Book-Seminar-Hall-Div {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .register-btn {
+        width: 130px;
+        font-weight: 600;
+        height: 33px !important;
+        font-size: 13px;
+    }
+
+    .bttn-info {
+        height: 30px;
+    }
+
+    .Qr-Code-Main-Div {
+        height: 50px !important;
+        width: 15%;
+        /* margin-top: 3px; */
+
+    }
+
+    .QR-code-inner {
+        height: 50px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .Qr-code-text-h6 {
+        font-size: 10px;
+    }
+
+    .company-heading-tag-h2 {
+        font-size: 17px;
+
+    }
+}
+
+
+
+
+@media (max-width:400px) {
+    .btn-register {
+        color: green;
+        width: 60px;
+        font-weight: 500;
+        height: 40px;
+    }
+
+    .retired-life-heading {
+        color: blue;
+    }
+
+    .seminarDescriptionDiv {
+        /* border: 1px solid black !important; */
+        width: auto;
+        max-width: 200px !important;
+    }
+
+    .Qr-Code-Main-Div {
+        height: 50px !important;
+        width: 15%;
+        /* margin-top: 3px; */
+
+    }
+
+    .QR-code-inner {
+        height: 50px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .Qr-code-text-h6 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:350px) {
+    .Qr-Code-Main-Div {
+        height: 50px !important;
+        width: 15%;
+        margin-top: 3px;
+
+    }
+
+    .QR-code-inner {
+        height: 50px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .Qr-code-text-h6 {
+        font-size: 10px;
+    }
+
+}
+
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
