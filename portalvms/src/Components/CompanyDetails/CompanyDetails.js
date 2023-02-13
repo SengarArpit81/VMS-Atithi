@@ -1184,15 +1184,15 @@ console.log("setconferenceHallYesNoState",conferenceHallYesNoState)
                       <h6>Do you have conference hall ?</h6>
                     </div>
                     <div className="d-flex">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1"  onClick={(e)=>setconferenceHallYesNoState(true)}/>
-                        <label class="form-check-label" for="flexRadioDefault1">
+                      <div className="form-check">
+                        <input className="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1"  onClick={(e)=>setconferenceHallYesNoState(true)}/>
+                        <label className="form-check-label" for="flexRadioDefault1">
                           Yes
                         </label>
                       </div>
-                      <div class="form-check ms-2">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2"   onClick={(e)=>setconferenceHallYesNoState(false)}/>
-                        <label class="form-check-label" for="flexRadioDefault2">
+                      <div className="form-check ms-2">
+                        <input className="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2"   onClick={(e)=>setconferenceHallYesNoState(false)}/>
+                        <label className="form-check-label" for="flexRadioDefault2">
                           No
                         </label>
                       </div>
@@ -1366,15 +1366,15 @@ console.log("setconferenceHallYesNoState",conferenceHallYesNoState)
                       <h6>Do you want to rent your conference hall ?</h6>
                     </div>
                     <div className="d-flex">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3" onClick={()=>setconferenceHallRentYesNoState(true)}/>
-                        <label class="form-check-label" for="flexRadioDefault3">
+                      <div className="form-check">
+                        <input className="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3" onClick={()=>setconferenceHallRentYesNoState(true)}/>
+                        <label className="form-check-label" for="flexRadioDefault3">
                           Yes
                         </label>
                       </div>
-                      <div class="form-check ms-2">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault4" onClick={()=>setconferenceHallRentYesNoState(false)} />
-                        <label class="form-check-label" for="flexRadioDefault4">
+                      <div className="form-check ms-2">
+                        <input className="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault4" onClick={()=>setconferenceHallRentYesNoState(false)} />
+                        <label className="form-check-label" for="flexRadioDefault4">
                           No
                         </label>
                       </div>

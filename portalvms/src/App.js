@@ -17,6 +17,7 @@ import Contactus from "./Components/ContactUS/Contactus";
 import Benefits from "./Components/Benifits/Benefits";
 import Showcompanydetailtable from "./Components/CompanyDetails/Showcompanydetailtable";
 import Conferencehalllist from "./Components/Confrence hall List/Conferencehalllist";
+import Registeruser from "./Components/Register User/Registeruser";
 // https://doccure-react.dreamguystech.com/template/login#0
 
 function App() {
@@ -34,8 +35,8 @@ function App() {
             <Route exact path="/signin" element={<Signin />} />
             <Route exact path="/signup" element={<Signup />} />
            <Route exact path="/companydetail" element={<Showcompanydetailtable/>}/>
-           <Route exact path="/Conferencehalllist" element={<Conferencehalllist/>}/>
-
+           <Route exact path="/seminarlist" element={<Conferencehalllist/>}/>
+           <Route exact path="/registeruser" element={<Registeruser/>}/>
 
            <Route exact path="/benefits" element={<Benefits />} />
             <Route exact path="/fourbox" element={<Fourbox/>} />

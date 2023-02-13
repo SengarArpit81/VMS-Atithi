@@ -1,5 +1,6 @@
 import { Col, Row } from 'antd'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 // import { Link, useParams, useHistory } from "react-router-dom";
 // import {useHistory} from "react-router-dom"
 import "./confrencelist.css"
@@ -85,7 +86,7 @@ const Conferencehalllist = () => {
                                                             </p>
                                                         </div>
                                                         <div className="col-2  p-0 " style={{ width: "auto" }}>
-                                                            <a type="button" className="text-decoration-underline text-dark ms-1"
+                                                            <a href='#' type="button" className="text-decoration-underline text-dark ms-1 read-more-button"
                                                             // onClick={() => readMoreFunction("readMore", seminar)}
                                                             onClick={readMoreFunction}
 
@@ -97,9 +98,11 @@ const Conferencehalllist = () => {
                                                 </Col>
                                                 <Col span={6} xs={24} sm={24} md={6} lg={6}>
                                                     <div className='Book-Seminar-Hall-Div'>
+                                                        <Link to="/registeruser">
                                                         <button type="button" className="btn p-0 px-sm-2 btn-outline-dark register-btn"
                                                         //  onClick={() => readMoreFunction("registerNow", seminar)}
                                                         >Book Seminar Hall</button>
+                                                        </Link>
                                                     </div>
                                                 </Col>
                                             </Row>
