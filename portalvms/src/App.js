@@ -18,6 +18,7 @@ import Benefits from "./Components/Benifits/Benefits";
 import Showcompanydetailtable from "./Components/CompanyDetails/Showcompanydetailtable";
 import Conferencehalllist from "./Components/Confrence hall List/Conferencehalllist";
 import Registeruser from "./Components/Register User/Registeruser";
+// import Showslotmodal from "./Components/ShowAllSlot/Showslotmodal";
 // https://doccure-react.dreamguystech.com/template/login#0
 
 function App() {
@@ -37,6 +38,8 @@ function App() {
            <Route exact path="/companydetail" element={<Showcompanydetailtable/>}/>
            <Route exact path="/seminarlist" element={<Conferencehalllist/>}/>
            <Route exact path="/registeruser" element={<Registeruser/>}/>
+           <Route  path="/seminarlist/:id" exact element={<Conferencehalllist/>}/>
+
 
            <Route exact path="/benefits" element={<Benefits />} />
             <Route exact path="/fourbox" element={<Fourbox/>} />

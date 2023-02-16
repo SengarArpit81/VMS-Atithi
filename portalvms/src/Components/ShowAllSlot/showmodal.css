@@ -1,0 +1,62 @@
+.ant-modal-header{
+    background-color: #720c20 !important;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius:8px !important;
+    height: 48px;
+
+    
+}
+.ant-modal-title{
+    color: white !important;
+    /* /* overflow-x: hidden;  */
+   
+}
+.ant-modal-content{
+    padding: 0px !important;
+}
+.ant-modal-close{
+    top:12px !important
+}
+
+.main-slot-div{
+    width: 190px;
+    border: 1px solid rgb(222, 219, 219);
+    height: 40px;
+    padding-top: 8px;
+    /* vertical-align: middle; */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px -10px rgba(201, 196, 196, 0.5);
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgb(253, 248, 248);
+    
+}
+.slot-title-tag-h6{
+    color: maroon;
+}
+.main-slot-div h6{
+    /* font-family: sans-serif; */
+    font-size: 12px;
+   font-weight: 600 !important;
+   color: black;
+}
+.Book-Seminar-Hall-Div1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.slot-btn {
+    width: 160px;
+    font-weight: 600;
+    height: 36px;
+    background-color: maroon;
+
+    color: white;
+}
+.slot-btn:hover{
+    color: white !important;
+}
