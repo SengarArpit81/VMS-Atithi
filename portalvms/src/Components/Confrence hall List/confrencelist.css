@@ -250,11 +250,14 @@
     .bttn-info {
         height: 30px;
     }
+    .read-more-button{
+      font-size: 12px !important;
+    }
 
-    .Qr-Code-Main-Div {
+    /* .Qr-Code-Main-Div {
         height: 50px !important;
         width: 15%;
-        /* margin-top: 3px; */
+        /* margin-top: 3px; 
 
     }
 
@@ -266,7 +269,8 @@
 
     .Qr-code-text-h6 {
         font-size: 10px;
-    }
+    } */
+
 
     .company-heading-tag-h2 {
         font-size: 17px;

@@ -1,5 +1,6 @@
 import { Col, Row, Typography } from 'antd'
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const { Title, Text } = Typography;
 
@@ -43,9 +44,11 @@ const Readmore = (props) => {
                                                         >Book Seminar Hall</button>
                                                     </div> */}
                                 <div >
+                                    <Link to="/registeruser">
                                     <button style={{ backgroundColor: "#720c20",border:"none" }} className="text-light px-5 fs-8 fs-sm-4 py-2">
                                     Book Seminar Hall
                                     </button>
+                                    </Link>
                                 </div>
                                 
                                 </Col>

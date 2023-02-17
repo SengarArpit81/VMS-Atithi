@@ -50,7 +50,7 @@ const Footermain = () => {
                 </div>
               </Col>
               <Col span={8} xs={24} sm={24} md={8} lg={8}>
-                <div class="box Quik-Links-div">
+                <div className="box Quik-Links-div">
                   <h3>Follow US</h3>
                   <div className="box2">
                     <div className="social-media-link-div" >
