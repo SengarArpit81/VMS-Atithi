@@ -1,6 +1,7 @@
 import { Col, Row } from 'antd'
 import React, { useState } from 'react'
-// import { Link, useParams, useHistory } from "react-router-dom";
+import { Link, useParams } from 'react-router-dom'
+import Showslotmodal from '../ShowAllSlot/Showslotmodal'
 // import {useHistory} from "react-router-dom"
 import "./confrencelist.css"
 import Readmore from './Readmore'
@@ -8,8 +9,25 @@ import Searchcomponnets from './Searchcomponnets'
 
 const Conferencehalllist = () => {
 
+    const params = useParams()
+
+    console.log("pppppppppppqwqe", params)
     // const history = useHistory();
+
     const [readMoreState, setReadMoreState] = useState(false)
+
+
+    const [showAddModal, setShowAddModal] = useState(false)
+    const [openModalById, setOpenModalById] = useState(0)
+
+    const companyInfoEditModal = () => {
+        // setOpenModalById(e)
+        setShowAddModal(true)
+    }
+
+    const handleClose = () => {
+        setShowAddModal(false);
+    }
 
     const readMoreFunction = (buttonId, seminar) => {
         //    console.log("seminar", seminar)
@@ -41,7 +59,7 @@ const Conferencehalllist = () => {
                     </Row>
 
 
-                    {readMoreState == true ? <Readmore setReadMoreState={setReadMoreState}/> : <Row>
+                    {readMoreState == true ? <Readmore setReadMoreState={setReadMoreState} /> : <Row>
                         <Col span={24} className='container bg-white pb-1' style={{ position: "relative" }}>
                             {/* <div > */}
                             <div className="bg-white" style={{ position: "sticky", top: "0", zIndex: "9" }}>
@@ -75,32 +93,50 @@ const Conferencehalllist = () => {
                                                     <div>
                                                         <h5>Location</h5>
                                                     </div>
-                                                    <div className="row m-0 p-0" >
-                                                        <div className="col-12 pe-0 p-0 seminarDescriptionDiv" style={{ width: "auto", maxWidth: "200px" }}>
-                                                            <p className='adviser-tag-h4 m-0 p-0' style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }} >
-                                                                {/* {seminar.description} */}
-                                                                know more about the confrace room.....
+                                                    {params.id == 2 ? "" :
+                                                        <div className="row m-0 p-0" >
+                                                            <div className="col-12 pe-0 p-0 seminarDescriptionDiv" style={{ width: "auto", maxWidth: "200px" }}>
+                                                                <p className='adviser-tag-h4 m-0 p-0' style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }} >
+                                                                    {/* {seminar.description} */}
+                                                                    know more about the confrace room.....
 
 
-                                                            </p>
+                                                                </p>
+                                                            </div>
+                                                            <div className="col-2  p-0 " style={{ width: "auto" }}>
+                                                                <a href='#' type="button" className="text-decoration-underline text-dark ms-1 read-more-button"
+                                                                    // onClick={() => readMoreFunction("readMore", seminar)}
+                                                                    onClick={readMoreFunction}
+
+                                                                >
+                                                                    Read More
+                                                                </a>
+                                                            </div>
                                                         </div>
-                                                        <div className="col-2  p-0 " style={{ width: "auto" }}>
-                                                            <a type="button" className="text-decoration-underline text-dark ms-1"
-                                                            // onClick={() => readMoreFunction("readMore", seminar)}
-                                                            onClick={readMoreFunction}
-
-                                                            >
-                                                                Read More
-                                                            </a>
-                                                        </div>
-                                                    </div>
+                                                    }
                                                 </Col>
                                                 <Col span={6} xs={24} sm={24} md={6} lg={6}>
-                                                    <div className='Book-Seminar-Hall-Div'>
-                                                        <button type="button" className="btn p-0 px-sm-2 btn-outline-dark register-btn"
-                                                        //  onClick={() => readMoreFunction("registerNow", seminar)}
-                                                        >Book Seminar Hall</button>
-                                                    </div>
+                                                    {params.id == 2 ?
+                                                        <>
+                                                            <div className='Book-Seminar-Hall-Div'>
+                                                                {/* <Link to="/registeruser"> */}
+                                                                <button type="button" className="btn p-0 px-sm-2 btn-outline-dark register-btn"
+                                                                    //  onClick={() => readMoreFunction("registerNow", seminar)}
+                                                                    onClick={companyInfoEditModal}
+                                                                >Show Seminar Slot</button>
+                                                                {/* </Link> */}
+                                                            </div>
+                                                        </>
+                                                        :
+
+                                                        <><div className='Book-Seminar-Hall-Div'>
+                                                            <Link to="/registeruser">
+                                                                <button type="button" className="btn p-0 px-sm-2 btn-outline-dark register-btn"
+                                                                //  onClick={() => readMoreFunction("registerNow", seminar)}
+                                                                >Book Seminar Hall</button>
+                                                            </Link>
+                                                        </div></>}
+
                                                 </Col>
                                             </Row>
 
@@ -218,6 +254,16 @@ const Conferencehalllist = () => {
 
                 </Col>
             </Row>
+            {
+                showAddModal == true &&
+
+                <Showslotmodal showAddModal={showAddModal}
+                    // openModalById={openModalById}
+                    setShowAddModal={setShowAddModal}
+
+                //  GetCommMediumPathApiFuction={() => GetCommMediumPathApiFuction(subtenantID)} 
+                />
+            }
         </div>
     )
 }

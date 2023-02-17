@@ -13,7 +13,7 @@ const Searchcomponnets = () => {
                    
                         <div className='row' >
                             <div className='col input-group mt-2  Serach-Input-Box-Div'>
-                                <input type="text" class="form-control" placeholder="Search for the Speaker or Seminar" 
+                                <input type="text" className="form-control" placeholder="Search for the Speaker or Seminar" 
                                 // onChange={(e) => setSearch(e.target.value)} 
                                 />
                                 <a href="#" style={{ backgroundColor: "#F4F6F6" }}><img className='' height={40} src="/icons/eventSearchIngIcon.svg" /></a>
@@ -22,7 +22,7 @@ const Searchcomponnets = () => {
                     
                     <div className='row mt-2 d-flex align-items-center mb-2 mb-md-0' >
                         <div className='col-md-6 col-lg-6 col-sm-12 col Serach-Text-Div'>
-                            <h3 class="title-tag title-taggs-H1">Upcoming Seminar Hall List</h3>
+                            <h3 className="title-tag title-taggs-H1">Upcoming Seminar Hall List</h3>
                         </div>
 
                         
@@ -31,8 +31,8 @@ const Searchcomponnets = () => {
 
 
                                     {/* <div className=' d-flex justify-content-around'> */}
-                                        <div class=" d-flex gap-1  checkBox-text-Div checkBox-text-Div-Input" >
-                                            <input type="checkbox" class="checkmark " name="priorityHigh" id="priorityHigh" 
+                                        <div className=" d-flex gap-1  checkBox-text-Div checkBox-text-Div-Input" >
+                                            <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh" 
                                             // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
                                              />
 
@@ -40,7 +40,7 @@ const Searchcomponnets = () => {
                                         </div>
                                     {/* </div> */}
                                     {/* <div className=' d-flex justify-content-around '> */}
-                                        <div class="d-flex gap-1 checkBox-text-Div" >
+                                        <div className="d-flex gap-1 checkBox-text-Div" >
                                             <input type="checkbox" name="priorityLow" id="priorityLow"  
                                             // onChange={checkboxpaid} onClick={() => isCheckboxPaid("checked")}
                                              />
@@ -49,7 +49,7 @@ const Searchcomponnets = () => {
                                     {/* </div> */}
 
                                     {/* <div className=' d-flex justify-content-around    '> */}
-                                        <div class="  d-flex gap-1 checkBox-text-Div" >
+                                        <div className="  d-flex gap-1 checkBox-text-Div" >
                                             <input type="checkbox" name="priorityHigh1" id="priorityHigh1" 
                                             // onChange={checkboxdirect} onClick={() => isCheckboxDirect("checked")} 
                                             />
@@ -57,7 +57,7 @@ const Searchcomponnets = () => {
                                         </div>
                                     {/* </div> */}
                                     {/* <div className=' d-flex justify-content-around '> */}
-                                        <div class="d-flex gap-1 checkBox-text-Div" >
+                                        <div className="d-flex gap-1 checkBox-text-Div" >
                                             <input type="checkbox" name="priorityLow1" id="priorityLow1" 
                                             // onChange={checkboxwebinar} onClick={() => isCheckboxWebinar("checked")}
                                              />
@@ -66,15 +66,15 @@ const Searchcomponnets = () => {
                                     {/* </div> */}
 
                                     {/* <div className='col-4  mt-2 d-flex justify-content-around'>
-                                        <div class="form-check  me-3 d-flex  align-items-center">
-                                            <input class="form-check-input" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault1" onChange={checkboxdirect} />
-                                            <label class="form-check-label ms-1" for="flexRadioDefault1"> In-Person </label>
+                                        <div className="form-check  me-3 d-flex  align-items-center">
+                                            <input className="form-check-input" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault1" onChange={checkboxdirect} />
+                                            <label className="form-check-label ms-1" for="flexRadioDefault1"> In-Person </label>
                                         </div>
                                     </div>
                                     <div className='col-3 d-flex justify-content-around ml-2 mt-2'>
-                                        <div class="form-check d-flex  align-items-center gap-2">
-                                            <input class="form-check-input" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault1" onChange={checkboxwebinar} />
-                                            <label class="form-check-label" for="flexRadioDefault1"> Webinar </label>
+                                        <div className="form-check d-flex  align-items-center gap-2">
+                                            <input className="form-check-input" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault1" onChange={checkboxwebinar} />
+                                            <label className="form-check-label" for="flexRadioDefault1"> Webinar </label>
                                         </div>
                                     </div> */}
 
