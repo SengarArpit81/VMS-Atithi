@@ -18,6 +18,7 @@ import Benefits from "./Components/Benifits/Benefits";
 import Showcompanydetailtable from "./Components/CompanyDetails/Showcompanydetailtable";
 import Conferencehalllist from "./Components/Confrence hall List/Conferencehalllist";
 import Registeruser from "./Components/Register User/Registeruser";
+import Previewslot from "./Components/ShowAllSlot/Previewslot";
 // import Showslotmodal from "./Components/ShowAllSlot/Showslotmodal";
 // https://doccure-react.dreamguystech.com/template/login#0
 
@@ -26,40 +27,40 @@ function App() {
     <>
       <div>
 
-      <Menubar />
-      
+        <Menubar />
+
       </div>
-      <div style={{ minHeight: "90vh"}} className="Main-Layoyt-Div" >
-        
-          <Routes>
-            <Route exact path="/" element={<Layoyt />} />
-            <Route exact path="/signin" element={<Signin />} />
-            <Route exact path="/signup" element={<Signup />} />
-           <Route exact path="/companydetail" element={<Showcompanydetailtable/>}/>
-           <Route exact path="/seminarlist" element={<Conferencehalllist/>}/>
-           <Route exact path="/registeruser" element={<Registeruser/>}/>
-           <Route  path="/seminarlist/:id" exact element={<Conferencehalllist/>}/>
+      <div style={{ minHeight: "90vh" }} className="Main-Layoyt-Div" >
+
+        <Routes>
+          <Route exact path="/" element={<Layoyt />} />
+          <Route exact path="/signin" element={<Signin />} />
+          <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/companydetail" element={<Showcompanydetailtable />} />
+          <Route exact path="/seminarlist" element={<Conferencehalllist />} />
+          <Route exact path="/registeruser" element={<Registeruser />} />
+          <Route path="/seminarlist/:id" exact element={<Conferencehalllist />} />
+          <Route path="/previewslot" exact element={<Previewslot />} /> 
+
+          <Route exact path="/benefits" element={<Benefits />} />
+          <Route exact path="/fourbox" element={<Fourbox />} />
+          <Route exact path="/aboutus" element={<Aboutus />} />
+          <Route exact path="/contactus" element={<Contactus />} />
+
+          <Route exact path="/addcompanydetails" element={<CompanyDetails />} />
+          <Route exact path="/approvedvisitors" element={<Approvedvisitors />} />
+          <Route exact path="/addvisitors" element={<AddVisitors />} />
+          <Route exact path="/rejectedlist" element={<Rejectedvisitors />} />
 
 
-           <Route exact path="/benefits" element={<Benefits />} />
-            <Route exact path="/fourbox" element={<Fourbox/>} />
-            <Route exact path="/aboutus" element={<Aboutus/>}/>
-            <Route exact path="/contactus" element={<Contactus/>} />
-
-            <Route exact path="/addcompanydetails" element={<CompanyDetails />} />
-            <Route exact path="/approvedvisitors" element={<Approvedvisitors />} />
-            <Route exact path="/addvisitors" element={<AddVisitors/>} />
-            <Route exact path="/rejectedlist" element={<Rejectedvisitors/>} />
+        </Routes>
 
 
-          </Routes>
-      
-  
- 
-        
+
+
       </div>
       <div>
-      <Footermain/>
+        <Footermain />
       </div>
     </>
   );
