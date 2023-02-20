@@ -1,6 +1,7 @@
 import { Col, Row } from 'antd'
 import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import Commonbackbutton from '../CommonButtons/Commonbackbutton'
 import Showslotmodal from '../ShowAllSlot/Showslotmodal'
 // import {useHistory} from "react-router-dom"
 import "./confrencelist.css"
@@ -118,22 +119,27 @@ const Conferencehalllist = () => {
                                                 <Col span={6} xs={24} sm={24} md={6} lg={6}>
                                                     {params.id == 2 ?
                                                         <>
-                                                            <div className='Book-Seminar-Hall-Div'>
+                                                            <div className='Book-Seminar-Hall-Div' onClick={companyInfoEditModal}>
                                                                 {/* <Link to="/registeruser"> */}
-                                                                <button type="button" className="btn p-0 px-sm-2 btn-outline-dark register-btn"
-                                                                    //  onClick={() => readMoreFunction("registerNow", seminar)}
-                                                                    onClick={companyInfoEditModal}
-                                                                >Show Seminar Slot</button>
+                                                                {/* <button type="button" className="btn p-0 px-sm-2 btn-outline-dark register-btn" */}
+                                                                    {/* onClick={companyInfoEditModal} */}
+
+                                                                {/* >Show Seminar Slot</button> */}
                                                                 {/* </Link> */}
+                                                                <Commonbackbutton backButtonText={"Show Seminar Slot"}
+                                                                    
+                                                                
+                                                                />
                                                             </div>
                                                         </>
                                                         :
 
                                                         <><div className='Book-Seminar-Hall-Div'>
                                                             <Link to="/registeruser">
-                                                                <button type="button" className="btn p-0 px-sm-2 btn-outline-dark register-btn"
+                                                                {/* <button type="button" className="btn p-0 px-sm-2 btn-outline-dark register-btn"
                                                                 //  onClick={() => readMoreFunction("registerNow", seminar)}
-                                                                >Book Seminar Hall</button>
+                                                                >Book Seminar Hall</button> */}
+                                                                <Commonbackbutton backButtonText={"Book Seminar Hall"}/>
                                                             </Link>
                                                         </div></>}
 

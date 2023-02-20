@@ -2,6 +2,7 @@ import { Col, Row } from 'antd'
 import React, { useState } from 'react'
 import { Table } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import Commonbutton from '../CommonButtons/Commonbutton'
 import "../CompanyDetails/companytable.css"
 import Compnayinfoeditmodal from './Compnayinfoeditmodal'
 const Showcompanydetailtable = () => {
@@ -37,7 +38,7 @@ const Showcompanydetailtable = () => {
                         </Col>
                         <Col span={10} xs={10} sm={10} md={10} lg={10}>
                             <Link className="linkstyles" to="/addcompanydetails" >
-                                <div className=" d-flex justify-content-end">
+                                {/* <div className=" d-flex justify-content-end">
                                     <button
                                         className="Add-Edit-btn text-white"
                                         type="submit"
@@ -45,7 +46,8 @@ const Showcompanydetailtable = () => {
                                     >
                                         Add Company Detail
                                     </button>
-                                </div>
+                                </div> */}
+                                <Commonbutton buttonText={"Add Company Detail"}/>
                             </Link>
 
 

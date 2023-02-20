@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import "./CompanyDetails.css";
 import { company_Schema } from "../Validation/Validation";
 import { useFormik } from "formik";
+import Commonbutton from '../CommonButtons/Commonbutton';
 
 const initialValues = {
     company_n: "",
@@ -1028,13 +1029,14 @@ const Compnayinfoeditmodal = (props) => {
                     <Row>
                         <Col span={24} className="mt-2  ">
                             <div className=" d-flex justify-content-end">
-                                <button
+                                {/* <button
                                     className="Add-Edit-btn text-white"
                                     type="submit"
                                 // onClick={addEditModalFun}
                                 >
                                     Update
-                                </button>
+                                </button> */}
+                                <Commonbutton buttonText="Update"/>
                             </div>
                         </Col>
                     </Row>
