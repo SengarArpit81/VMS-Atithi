@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import "./CompanyDetails.css";
 import { company_Schema } from "../Validation/Validation";
 import { useFormik } from "formik";
+import Commonbutton from "../CommonButtons/Commonbutton";
+import Commonbackbutton from "../CommonButtons/Commonbackbutton";
 
 const initialValues = {
   company_n: "",
@@ -1552,11 +1554,14 @@ console.log("setconferenceHallYesNoState",conferenceHallYesNoState)
                   <Col span={24} className="d-flex justify-content-between">
                     <div>
                       <Link to="/companydetail">
-                        <Button style={{ backgroundColor: "maroon" }}>Back</Button>
+                        {/* <Button style={{ backgroundColor: "maroon" }}>Back</Button> */}
+                        <Commonbackbutton backButtonText={"Back"}/>
+
                       </Link>
                     </div>
                     <div>
-                      <Button style={{ backgroundColor: "maroon" }}>Save</Button>
+                    <Commonbutton buttonText={"Save"}/>
+                      {/* <Button style={{ backgroundColor: "maroon" }}>Save</Button> */}
 
                     </div>
                   </Col>

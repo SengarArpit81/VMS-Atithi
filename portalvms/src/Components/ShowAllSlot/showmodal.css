@@ -17,10 +17,12 @@
 .ant-modal-close{
     top:12px !important
 }
-
+.date-space-class{
+    width: 35% !important;
+}
 .main-slot-div{
     width: 190px;
-    border: 1px solid rgb(222, 219, 219);
+    border: 2px solid rgb(222, 219, 219);
     height: 40px;
     padding-top: 8px;
     /* vertical-align: middle; */
@@ -36,10 +38,12 @@
 }
 .slot-title-tag-h6{
     color: maroon;
+    font-size: 16px !important;
+    font-weight: 600 !important;
 }
 .main-slot-div h6{
     /* font-family: sans-serif; */
-    font-size: 12px;
+    font-size: 13px;
    font-weight: 600 !important;
    color: black;
 }
@@ -59,4 +63,25 @@
 }
 .slot-btn:hover{
     color: white !important;
+}
+
+@media (max-width:900px){
+    .date-space-class{
+        width: 43% !important;
+    }
+    .slot-title-tag-h6{
+        font-size: 14px !important;
+    }
+    .main-slot-div{
+        width: 166px;
+    }
+    
+    .main-slot-div h6{
+        font-size: 11px;
+    }
+}
+@media (max-width:600px){
+    .date-space-class{
+        width: 100% !important;
+    }
 }
