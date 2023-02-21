@@ -50,7 +50,7 @@ const Barcodemodal = (props) => {
                                         //  onClick={() => readMoreFunction("registerNow", seminar)}
                                         // onClick={companyInfoEditModal}
                                         >More Book Slot</button> */}
-                    <Commonbutton buttonText={"More Book Slot"}/>
+                                        <Commonbutton buttonText={"More Book Slot"} />
 
                                     </Link>
                                 </div>

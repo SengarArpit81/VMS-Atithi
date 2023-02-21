@@ -5,8 +5,12 @@ const Commonbackbutton = (props) => {
     return (
         <div>
             <div className='Book-Seminar-Hall-Div'>
-                <button type="button" className="btn p-0 px-sm-2 btn-outline-dark register-btn1" onClick={props.backButton}>
+                <button type="button" className="btn p-0 px-sm-2 btn-outline-dark register-btn1" 
+                   onClick={props.backButton}
+                   style={{width:props?.backbuttonwidth}}
+                   >
                     {props.backButtonText}
+                    
                 </button>
             </div>
         </div >

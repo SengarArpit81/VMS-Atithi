@@ -20,8 +20,8 @@ const initialValues = {
 };
 
 const CompanyDetails = () => {
- const [conferenceHallYesNoState, setconferenceHallYesNoState] = useState()
- const [conferenceHallRentYesNoState, setconferenceHallRentYesNoState] = useState()
+  const [conferenceHallYesNoState, setconferenceHallYesNoState] = useState()
+  const [conferenceHallRentYesNoState, setconferenceHallRentYesNoState] = useState()
 
 
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
@@ -34,8 +34,16 @@ const CompanyDetails = () => {
       },
     });
 
-   
-console.log("setconferenceHallYesNoState",conferenceHallYesNoState)
+  const conferenceHallYesFunction = () => {
+    setconferenceHallYesNoState(true)
+  }
+  const conferenceHallNoFunction = () => {
+    setconferenceHallYesNoState(false)
+    setconferenceHallRentYesNoState(false)
+
+  }
+
+  console.log("setconferenceHallYesNoState", conferenceHallYesNoState)
 
   return (
     <div>
@@ -1187,13 +1195,13 @@ console.log("setconferenceHallYesNoState",conferenceHallYesNoState)
                     </div>
                     <div className="d-flex">
                       <div className="form-check">
-                        <input className="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1"  onClick={(e)=>setconferenceHallYesNoState(true)}/>
+                        <input className="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" onClick={conferenceHallYesFunction} />
                         <label className="form-check-label" for="flexRadioDefault1">
                           Yes
                         </label>
                       </div>
                       <div className="form-check ms-2">
-                        <input className="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2"   onClick={(e)=>setconferenceHallYesNoState(false)}/>
+                        <input className="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2" onClick={conferenceHallNoFunction} />
                         <label className="form-check-label" for="flexRadioDefault2">
                           No
                         </label>
@@ -1201,366 +1209,399 @@ console.log("setconferenceHallYesNoState",conferenceHallYesNoState)
                     </div>
                   </Col>
                 </Row>
-              { conferenceHallYesNoState == true ? <div>
+                {conferenceHallYesNoState == true ? <div>
 
-                <Row
-                  //   style={{ border: "1px dotted black", borderRadius: "5px" }}
-                  className="p-1 mt-2 form-control"
-                >
-                  <Col span={24}>
-                    <h6 style={{ color: "maroon" }} >Primary Conference Hall Information</h6>
+                  <Row
+                    //   style={{ border: "1px dotted black", borderRadius: "5px" }}
+                    className="p-1 mt-2 form-control"
+                  >
+                    <Col span={24}>
+                      <h6 style={{ color: "maroon" }} >Primary Conference Hall Information</h6>
 
-                    <Row>
-                      <Col span={24} className="w-100 d-flex">
-                        <Row className="w-100">
-                          <Col
-                            span={8}
-                            xs={24}
-                            sm={24}
-                            md={8}
-                            lg={8}
-                          // style={{ border: "1px solid red" }}
-                          >
-                            <Row>
-                              <Col
-                                span={24}
-                                style={{ flexDirection: "column" }}
-                              >
+                      <Row>
+                        <Col span={24} className="w-100 d-flex">
+                          <Row className="w-100">
+                            <Col
+                              span={8}
+                              xs={24}
+                              sm={24}
+                              md={8}
+                              lg={8}
+                            // style={{ border: "1px solid red" }}
+                            >
+                              <Row>
+                                <Col
+                                  span={24}
+                                  style={{ flexDirection: "column" }}
+                                >
 
-                                <Input
-                                  type="text"
+                                  <Input
+                                    type="text"
 
-                                  placeholder="Society Name"
+                                    placeholder="Please enter conference hall width"
 
 
-                                  name="Sociaty_Name"
-                                  autoComplete="off"
-                                  value={values.Sociaty_Name}
-                                  onChange={handleChange}
-                                  onBlur={handleBlur}
-                                  style={{ width: "99%", height: "36px" }}
-                                />
-                              </Col>
-                              <Col style={{ height: "20px" }}>
-                                {errors.Sociaty_Name && touched.Sociaty_Name ? (
-                                  <p className="form-error">
-                                    {errors.Sociaty_Name}
-                                  </p>
-                                ) : null}
-                              </Col>
-                            </Row>
-                          </Col>
-                          <Col
-                            span={8}
-                            xs={24}
-                            sm={24}
-                            md={8}
-                            lg={8}
-                            className="second-main-Col"
-                          >
-                            <Row>
-                              <Col
-                                span={24}
-                                style={{ flexDirection: "column" }}
-                              >
-                                <Input
-                                  type="text"
-                                  placeholder="Building Name"
-                                  name="Building_Name"
-                                  autoComplete="off"
-                                  value={values.Building_Name}
-                                  onChange={handleChange}
-                                  onBlur={handleBlur}
-                                  className="secod-col-input-box"
-                                />
-                              </Col>
-                              <Col style={{ height: "20px" }}>
-                                {errors.Building_Name && touched.Building_Name ? (
-                                  <p className="form-error form-error-col-p-tag">
-                                    {errors.Building_Name}
-                                  </p>
-                                ) : null}
-                              </Col>
-                            </Row>
-                          </Col>
-                          <Col
-                            span={8}
-                            xs={24}
-                            sm={24}
-                            md={8}
-                            lg={8}
-                            className="second-main-Col"
-                          >
-                            <Row>
-                              <Col
-                                span={24}
-                                style={{ flexDirection: "column" }}
-                              >
-                                <Input
-                                  type="text"
-                                  placeholder="Enter Building Floor Number"
-                                  name="Flour_Number"
-                                  autoComplete="off"
-                                  value={values.Flour_Number}
-                                  onChange={handleChange}
-                                  onBlur={handleBlur}
-                                  className="secod-col-input-box"
-                                />
-                              </Col>
-                              <Col style={{ height: "20px" }}>
-                                {errors.Flour_Number && touched.Flour_Number ? (
-                                  <p className="form-error form-error-col-p-tag">
-                                    {errors.Flour_Number}
-                                  </p>
-                                ) : null}
-                              </Col>
-                            </Row>
-                          </Col>
-                        </Row>
-                      </Col>
-                    </Row>
+                                    name="Sociaty_Name"
+                                    autoComplete="off"
+                                    value={values.Sociaty_Name}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    style={{ width: "99%", height: "36px" }}
+                                  />
+                                </Col>
+                                <Col style={{ height: "20px" }}>
+                                  {errors.Sociaty_Name && touched.Sociaty_Name ? (
+                                    <p className="form-error">
+                                      {errors.Sociaty_Name}
+                                    </p>
+                                  ) : null}
+                                </Col>
+                              </Row>
+                            </Col>
+                            <Col
+                              span={8}
+                              xs={24}
+                              sm={24}
+                              md={8}
+                              lg={8}
+                              className="second-main-Col"
+                            >
+                              <Row>
+                                <Col
+                                  span={24}
+                                  style={{ flexDirection: "column" }}
+                                >
+                                  <Input
+                                    type="text"
+                                    placeholder="Please enter conference hall length"
+                                    name="Building_Name"
+                                    autoComplete="off"
+                                    value={values.Building_Name}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    className="secod-col-input-box"
+                                  />
+                                </Col>
+                                <Col style={{ height: "20px" }}>
+                                  {errors.Building_Name && touched.Building_Name ? (
+                                    <p className="form-error form-error-col-p-tag">
+                                      {errors.Building_Name}
+                                    </p>
+                                  ) : null}
+                                </Col>
+                              </Row>
+                            </Col>
+                            <Col
+                              span={8}
+                              xs={24}
+                              sm={24}
+                              md={8}
+                              lg={8}
+                              className="second-main-Col"
+                            >
+                              <Row>
+                                <Col
+                                  span={24}
+                                  style={{ flexDirection: "column" }}
+                                >
+                                  <Input
+                                    type="text"
+                                    placeholder="Please enter Number of Attendees"
+                                    name="Flour_Number"
+                                    autoComplete="off"
+                                    value={values.Flour_Number}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    className="secod-col-input-box"
+                                  />
+                                </Col>
+                                <Col style={{ height: "20px" }}>
+                                  {errors.Flour_Number && touched.Flour_Number ? (
+                                    <p className="form-error form-error-col-p-tag">
+                                      {errors.Flour_Number}
+                                    </p>
+                                  ) : null}
+                                </Col>
+                              </Row>
+                            </Col>
+                          </Row>
+                        </Col>
+                      </Row>
 
-                    <Row className="mt-2">
-                      <Col span={24} className="w-100 d-flex">
-                        <Row className="w-100">
-                          <Col
-                            span={8}
-                            xs={24}
-                            sm={24}
-                            md={8}
-                            lg={8}
-                          // style={{ border: "1px solid red" }}
-                          >
-                            <Row>
-                              <Col
-                                span={24}
-                                style={{ flexDirection: "column" }}
-                              >
-                                <Input
-                                  type="text"
-                                  placeholder="Enter Flat Number"
-                                  name="flat_Number"
-                                  autoComplete="off"
-                                  value={values.flat_Number}
-                                  onChange={handleChange}
-                                  onBlur={handleBlur}
-                                  style={{ width: "98%", height: "36px" }}
-                                />
-                              </Col>
-                              <Col style={{ height: "20px" }}>
-                                {errors.flat_Number && touched.flat_Number ? (
-                                  <p className="form-error">
-                                    {errors.flat_Number}
-                                  </p>
-                                ) : null}
-                              </Col>
-                            </Row>
-                          </Col>
-                        </Row>
-                      </Col>
-                    </Row>
-                  </Col>
-                </Row>
+                      <Row className="mt-2">
+                        <Col span={24} className="w-100 d-flex">
+                          <Row className="w-100">
+                            <Col
+                              span={8}
+                              xs={24}
+                              sm={24}
+                              md={8}
+                              lg={8}
+                            // style={{ border: "1px solid red" }}
+                            >
+                              <Row>
+                                <Col
+                                  span={24}
+                                  style={{ flexDirection: "column" }}
+                                  
+                                >
+                                  <div className=" d-flex checkBox-text-Div checkBox-text-Div-Input" >
+                                    Is conference hall with projecter ?    
+                                    <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
+                                    // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
+                                    style={{marginLeft:"49px"}}
+                                    />
+                                  </div>
+                                  <div className=" d-flex gap-3 mt-1  checkBox-text-Div checkBox-text-Div-Input" >
+                                    Is conference hall with Sound System ?    <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
+                                    // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
+                                    />
+                                  </div>
+                                  <div className=" d-flex mt-1   checkBox-text-Div checkBox-text-Div-Input" >
+                                    Is conference hall with micke ?    <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
+                                    // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
+                                    style={{marginLeft:"68px"}}
+                                    />
+                                  </div>
+                                  <div className=" d-flex  mt-1   checkBox-text-Div checkBox-text-Div-Input" >
+                                    Is conference hall with A.C ?    <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
+                                    // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
+                                    style={{marginLeft:"83px"}}
 
-                <Row className="p-1 mt-2">
-                  <Col>
+                                    />
+                                  </div>
+                                  <div className=" d-flex mt-1   checkBox-text-Div checkBox-text-Div-Input" >
+                                    Is conference hall with Fans ?    <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
+                                    // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
+                                    style={{marginLeft:"76px"}}
+
+                                    />
+                                  </div>
+                                  {/* <Input
+                                    type="text"
+                                    placeholder="Enter Flat Number"
+                                    name="flat_Number"
+                                    autoComplete="off"
+                                    value={values.flat_Number}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    style={{ width: "98%", height: "36px" }}
+                                  />
+                                </Col>
+                                <Col style={{ height: "20px" }}>
+                                  {errors.flat_Number && touched.flat_Number ? (
+                                    <p className="form-error">
+                                      {errors.flat_Number}
+                                    </p>
+                                  ) : null}*/}
+                                </Col>
+                              </Row>
+                            </Col>
+                          </Row>
+                        </Col>
+                      </Row>
+                    </Col>
+                  </Row>
+
+                  <Row className="p-1 mt-2">
+                    <Col>
+                      <div>
+                        <h6>Do you want to rent your conference hall ?</h6>
+                      </div>
+                      <div className="d-flex">
+                        <div className="form-check">
+                          <input className="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3" onClick={() => setconferenceHallRentYesNoState(true)} />
+                          <label className="form-check-label" for="flexRadioDefault3">
+                            Yes
+                          </label>
+                        </div>
+                        <div className="form-check ms-2">
+                          <input className="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault4" onClick={() => setconferenceHallRentYesNoState(false)} />
+                          <label className="form-check-label" for="flexRadioDefault4">
+                            No
+                          </label>
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
+                  {conferenceHallRentYesNoState == true ?
                     <div>
-                      <h6>Do you want to rent your conference hall ?</h6>
-                    </div>
-                    <div className="d-flex">
-                      <div className="form-check">
-                        <input className="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3" onClick={()=>setconferenceHallRentYesNoState(true)}/>
-                        <label className="form-check-label" for="flexRadioDefault3">
-                          Yes
-                        </label>
-                      </div>
-                      <div className="form-check ms-2">
-                        <input className="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault4" onClick={()=>setconferenceHallRentYesNoState(false)} />
-                        <label className="form-check-label" for="flexRadioDefault4">
-                          No
-                        </label>
-                      </div>
-                    </div>
-                  </Col>
-                </Row>
-                {conferenceHallRentYesNoState == true ?
-                 <div>
- <Row
-                  //   style={{ border: "1px dotted black", borderRadius: "5px" }}
-                  className="p-1 mt-2 form-control"
-                >
-                  <Col span={24}>
-                    <h6 style={{ color: "maroon" }} >Primary Rent Amount of Conference Hall</h6>
+                      <Row
+                        //   style={{ border: "1px dotted black", borderRadius: "5px" }}
+                        className="p-1 mt-2 form-control"
+                      >
+                        <Col span={24}>
+                          <h6 style={{ color: "maroon" }} >Primary Rent Amount of Conference Hall</h6>
 
-                    <Row>
-                      <Col span={24} className="w-100 d-flex">
-                        <Row className="w-100">
-                          <Col
-                            span={8}
-                            xs={24}
-                            sm={24}
-                            md={8}
-                            lg={8}
-                          // style={{ border: "1px solid red" }}
-                          >
-                            <Row>
-                              <Col
-                                span={24}
-                                style={{ flexDirection: "column" }}
-                              >
+                          <Row>
+                            <Col span={24} className="w-100 d-flex">
+                              <Row className="w-100">
+                                <Col
+                                  span={8}
+                                  xs={24}
+                                  sm={24}
+                                  md={8}
+                                  lg={8}
+                                // style={{ border: "1px solid red" }}
+                                >
+                                  <Row>
+                                    <Col
+                                      span={24}
+                                      style={{ flexDirection: "column" }}
+                                    >
 
-                                <Input
-                                  type="text"
+                                      <Input
+                                        type="text"
 
-                                  placeholder="Society Name"
+                                        placeholder="Please enter rent amount for 2 hours"
 
 
-                                  name="Sociaty_Name"
-                                  autoComplete="off"
-                                  value={values.Sociaty_Name}
-                                  onChange={handleChange}
-                                  onBlur={handleBlur}
-                                  style={{ width: "99%", height: "36px" }}
-                                />
-                              </Col>
-                              <Col style={{ height: "20px" }}>
-                                {errors.Sociaty_Name && touched.Sociaty_Name ? (
-                                  <p className="form-error">
-                                    {errors.Sociaty_Name}
-                                  </p>
-                                ) : null}
-                              </Col>
-                            </Row>
-                          </Col>
-                          <Col
-                            span={8}
-                            xs={24}
-                            sm={24}
-                            md={8}
-                            lg={8}
-                            className="second-main-Col"
-                          >
-                            <Row>
-                              <Col
-                                span={24}
-                                style={{ flexDirection: "column" }}
-                              >
-                                <Input
-                                  type="text"
-                                  placeholder="Building Name"
-                                  name="Building_Name"
-                                  autoComplete="off"
-                                  value={values.Building_Name}
-                                  onChange={handleChange}
-                                  onBlur={handleBlur}
-                                  className="secod-col-input-box"
-                                />
-                              </Col>
-                              <Col style={{ height: "20px" }}>
-                                {errors.Building_Name && touched.Building_Name ? (
-                                  <p className="form-error form-error-col-p-tag">
-                                    {errors.Building_Name}
-                                  </p>
-                                ) : null}
-                              </Col>
-                            </Row>
-                          </Col>
-                          <Col
-                            span={8}
-                            xs={24}
-                            sm={24}
-                            md={8}
-                            lg={8}
-                            className="second-main-Col"
-                          >
-                            <Row>
-                              <Col
-                                span={24}
-                                style={{ flexDirection: "column" }}
-                              >
-                                <Input
-                                  type="text"
-                                  placeholder="Enter Building Floor Number"
-                                  name="Flour_Number"
-                                  autoComplete="off"
-                                  value={values.Flour_Number}
-                                  onChange={handleChange}
-                                  onBlur={handleBlur}
-                                  className="secod-col-input-box"
-                                />
-                              </Col>
-                              <Col style={{ height: "20px" }}>
-                                {errors.Flour_Number && touched.Flour_Number ? (
-                                  <p className="form-error form-error-col-p-tag">
-                                    {errors.Flour_Number}
-                                  </p>
-                                ) : null}
-                              </Col>
-                            </Row>
-                          </Col>
-                        </Row>
-                      </Col>
-                    </Row>
+                                        name="Sociaty_Name"
+                                        autoComplete="off"
+                                        value={values.Sociaty_Name}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        style={{ width: "99%", height: "36px" }}
+                                      />
+                                    </Col>
+                                    <Col style={{ height: "20px" }}>
+                                      {errors.Sociaty_Name && touched.Sociaty_Name ? (
+                                        <p className="form-error">
+                                          {errors.Sociaty_Name}
+                                        </p>
+                                      ) : null}
+                                    </Col>
+                                  </Row>
+                                </Col>
+                                <Col
+                                  span={8}
+                                  xs={24}
+                                  sm={24}
+                                  md={8}
+                                  lg={8}
+                                  className="second-main-Col"
+                                >
+                                  <Row>
+                                    <Col
+                                      span={24}
+                                      style={{ flexDirection: "column" }}
+                                    >
+                                      <Input
+                                        type="text"
+                                        placeholder="Please enter rent amount for 3 hours"
+                                        name="Building_Name"
+                                        autoComplete="off"
+                                        value={values.Building_Name}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        className="secod-col-input-box"
+                                      />
+                                    </Col>
+                                    <Col style={{ height: "20px" }}>
+                                      {errors.Building_Name && touched.Building_Name ? (
+                                        <p className="form-error form-error-col-p-tag">
+                                          {errors.Building_Name}
+                                        </p>
+                                      ) : null}
+                                    </Col>
+                                  </Row>
+                                </Col>
+                                <Col
+                                  span={8}
+                                  xs={24}
+                                  sm={24}
+                                  md={8}
+                                  lg={8}
+                                  className="second-main-Col"
+                                >
+                                  <Row>
+                                    <Col
+                                      span={24}
+                                      style={{ flexDirection: "column" }}
+                                    >
+                                      <Input
+                                        type="text"
+                                        placeholder="Please enter rent amount for 4 hours"
+                                        name="Flour_Number"
+                                        autoComplete="off"
+                                        value={values.Flour_Number}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        className="secod-col-input-box"
+                                      />
+                                    </Col>
+                                    <Col style={{ height: "20px" }}>
+                                      {errors.Flour_Number && touched.Flour_Number ? (
+                                        <p className="form-error form-error-col-p-tag">
+                                          {errors.Flour_Number}
+                                        </p>
+                                      ) : null}
+                                    </Col>
+                                  </Row>
+                                </Col>
+                              </Row>
+                            </Col>
+                          </Row>
 
-                    <Row className="mt-2">
-                      <Col span={24} className="w-100 d-flex">
-                        <Row className="w-100">
-                          <Col
-                            span={8}
-                            xs={24}
-                            sm={24}
-                            md={8}
-                            lg={8}
-                          // style={{ border: "1px solid red" }}
-                          >
-                            <Row>
-                              <Col
-                                span={24}
-                                style={{ flexDirection: "column" }}
-                              >
-                                <Input
-                                  type="text"
-                                  placeholder="Enter Flat Number"
-                                  name="flat_Number"
-                                  autoComplete="off"
-                                  value={values.flat_Number}
-                                  onChange={handleChange}
-                                  onBlur={handleBlur}
-                                  style={{ width: "98%", height: "36px" }}
-                                />
-                              </Col>
-                              <Col style={{ height: "20px" }}>
-                                {errors.flat_Number && touched.flat_Number ? (
-                                  <p className="form-error">
-                                    {errors.flat_Number}
-                                  </p>
-                                ) : null}
-                              </Col>
-                            </Row>
-                          </Col>
-                        </Row>
-                      </Col>
-                    </Row>
-                  </Col>
-                </Row>
-                </div> : ""}
-               
-              </div>
-            :""  
-            }
-                
+                          <Row className="mt-2">
+                            <Col span={24} className="w-100 d-flex">
+                              <Row className="w-100">
+                                <Col
+                                  span={8}
+                                  xs={24}
+                                  sm={24}
+                                  md={8}
+                                  lg={8}
+                                // style={{ border: "1px solid red" }}
+                                >
+                                  <Row>
+                                    <Col
+                                      span={24}
+                                      style={{ flexDirection: "column" }}
+                                    >
+                                      <Input
+                                        type="text"
+                                        placeholder="Please enter rent amount for one day"
+                                        name="flat_Number"
+                                        autoComplete="off"
+                                        value={values.flat_Number}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        style={{ width: "98%", height: "36px" }}
+                                      />
+                                    </Col>
+                                    <Col style={{ height: "20px" }}>
+                                      {errors.flat_Number && touched.flat_Number ? (
+                                        <p className="form-error">
+                                          {errors.flat_Number}
+                                        </p>
+                                      ) : null}
+                                    </Col>
+                                  </Row>
+                                </Col>
+                              </Row>
+                            </Col>
+                          </Row>
+                        </Col>
+                      </Row>
+                    </div> : ""}
+
+                </div>
+                  : ""
+                }
+
 
                 <Row className="mt-3">
                   <Col span={24} className="d-flex justify-content-between">
                     <div>
                       <Link to="/companydetail">
                         {/* <Button style={{ backgroundColor: "maroon" }}>Back</Button> */}
-                        <Commonbackbutton backButtonText={"Back"}/>
+                        <Commonbackbutton backButtonText={"Back"} backbuttonwidth={135} />
 
                       </Link>
                     </div>
                     <div>
-                    <Commonbutton buttonText={"Save"}/>
+                      <Commonbutton buttonText={"Save"} buttonwidth={135} />
                       {/* <Button style={{ backgroundColor: "maroon" }}>Save</Button> */}
 
                     </div>
