@@ -47,7 +47,7 @@ const Showcompanydetailtable = () => {
                                         Add Company Detail
                                     </button>
                                 </div> */}
-                                <Commonbutton buttonText={"Add Company Detail"}/>
+                                <Commonbutton buttonText={"Add Company Detail"} />
                             </Link>
 
 
@@ -55,7 +55,7 @@ const Showcompanydetailtable = () => {
                     </Row>
                     <Row className='mt-4'>
                         <Col>
-                            <h6 style={{ color: "maroon" }}>Primary Information</h6>
+                            <h6 style={{ color: "maroon" }}>Primary Information </h6>
                             <Table bordered responsive>
                                 <thead className='bg-light'>
                                     <tr>
@@ -87,7 +87,7 @@ const Showcompanydetailtable = () => {
                                         <td >Sumit & Arpit Company</td>
                                         <td >Sumit & Arpit Company</td>
                                         <td >Sumit & Arpit Company</td>
-                                        <td  style={{ cursor: "pointer",color:"blue" }} onClick={() => companyInfoEditModal(1)}>Edit Detail</td>
+                                        <td style={{ cursor: "pointer", color: "blue" }} onClick={() => companyInfoEditModal(1)}>Edit Detail</td>
 
                                         {/* {Array.from({ length: 12 }).map((_, index) => (
                                             <td key={index}>Table cell {index}</td>
@@ -118,7 +118,7 @@ const Showcompanydetailtable = () => {
                                         <td >1234567890</td>
                                         <td >9087654321</td>
                                         <td >Sumit&ArpitDemo@gmail.com</td>
-                                        <td  style={{ cursor: "pointer",color:"blue" }} onClick={() => companyInfoEditModal(2)}> Edit Detail</td>
+                                        <td style={{ cursor: "pointer", color: "blue" }} onClick={() => companyInfoEditModal(2)}> Edit Detail</td>
 
 
                                     </tr>
@@ -157,8 +157,90 @@ const Showcompanydetailtable = () => {
                                         <td >Tower B</td>
                                         <td >4 th</td>
                                         <td >401</td>
-                                        <td  style={{ cursor: "pointer",color:"blue" }} onClick={() => companyInfoEditModal(3)}>Edit Detail</td>
+                                        <td style={{ cursor: "pointer", color: "blue" }} onClick={() => companyInfoEditModal(3)}>Edit Detail</td>
 
+                                    </tr>
+
+                                </tbody>
+                            </Table>
+
+                        </Col>
+                    </Row>
+
+                    <Row className='mt-2'>
+                        <Col>
+                            <h6 style={{ color: "maroon" }} >Primary Conference Hall Information</h6>
+                            <Table bordered responsive>
+                                <thead className='bg-light'>
+                                    <tr >
+                                        <th >Have Seminar hall</th>
+                                        <th >Width</th>
+                                        <th >Length</th>
+                                        <th >Seats</th>
+                                        <th >Projecter</th>
+                                        <th >Sound System</th>
+                                        <th >Micke</th>
+                                        <th >A.C</th>
+                                        <th >Fans</th>
+
+                                        <th >Description</th>
+                                        <th >Action</th>
+
+
+
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr >
+                                        <td >Yes</td>
+                                        <td >50ft</td>
+                                        <td >300ft</td>
+                                        <td >50</td>
+                                        <td >Yes</td>
+                                        <td >No</td>
+                                        <td >No</td>
+                                        <td >Yes</td>
+                                        <td >Yes</td>
+
+
+                                        <td style={{ width: "400px" }}>This is the best conference hal. Please visit one time and give to us one chance.
+                                            This is the best conference hal. Please visit one time and give to us one chance</td>
+
+
+                                        <td style={{ cursor: "pointer", color: "blue" }} onClick={() => companyInfoEditModal(4)}>Edit Detail</td>
+
+                                    </tr>
+
+                                </tbody>
+                            </Table>
+
+                        </Col>
+                    </Row>
+
+                    <Row className='mt-2'>
+                        <Col>
+                            <h6 style={{ color: "maroon" }} >Primary Conference Hall Amount Information</h6>
+                            <Table bordered responsive>
+                                <thead className='bg-light'>
+                                    <tr >
+
+                                        <th >Amount for 2 hours</th>
+                                        <th >Amount for 3 hours</th>
+                                        <th >Amount for 4 hours</th>
+                                        <th >Amount for One Day</th>
+                                        <th >Action</th>
+
+
+
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr>
+                                        <td >10000</td>
+                                        <td >15000</td>
+                                        <td >20000</td>
+                                        <td >22000</td>
+                                        <td style={{ cursor: "pointer", color: "blue" }} onClick={() => companyInfoEditModal(5)}>Edit Detail</td>
                                     </tr>
 
                                 </tbody>
@@ -233,8 +315,8 @@ const Showcompanydetailtable = () => {
 
                 <Compnayinfoeditmodal showAddModal={showAddModal}
                     openModalById={openModalById}
-                    setShowAddModal={setShowAddModal} 
-                    
+                    setShowAddModal={setShowAddModal}
+
                 //  GetCommMediumPathApiFuction={() => GetCommMediumPathApiFuction(subtenantID)} 
                 />
             }

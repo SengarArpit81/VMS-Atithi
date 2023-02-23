@@ -1329,73 +1329,40 @@ const CompanyDetails = () => {
                       </Row>
 
                       <Row className="mt-2">
-                        <Col span={24} className="w-100 d-flex">
-                          <Row className="w-100">
-                            <Col
-                              span={8}
-                              xs={24}
-                              sm={24}
-                              md={8}
-                              lg={8}
-                            // style={{ border: "1px solid red" }}
-                            >
-                              <Row>
-                                <Col
-                                  span={24}
-                                  style={{ flexDirection: "column" }}
-                                  
-                                >
-                                  <div className=" d-flex checkBox-text-Div checkBox-text-Div-Input" >
-                                    Is conference hall with projecter ?    
-                                    <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
-                                    // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
-                                    style={{marginLeft:"49px"}}
-                                    />
-                                  </div>
-                                  <div className=" d-flex gap-3 mt-1  checkBox-text-Div checkBox-text-Div-Input" >
-                                    Is conference hall with Sound System ?    <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
-                                    // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
-                                    />
-                                  </div>
-                                  <div className=" d-flex mt-1   checkBox-text-Div checkBox-text-Div-Input" >
-                                    Is conference hall with micke ?    <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
-                                    // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
-                                    style={{marginLeft:"68px"}}
-                                    />
-                                  </div>
-                                  <div className=" d-flex  mt-1   checkBox-text-Div checkBox-text-Div-Input" >
-                                    Is conference hall with A.C ?    <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
-                                    // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
-                                    style={{marginLeft:"83px"}}
-
-                                    />
-                                  </div>
-                                  <div className=" d-flex mt-1   checkBox-text-Div checkBox-text-Div-Input" >
-                                    Is conference hall with Fans ?    <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
-                                    // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
-                                    style={{marginLeft:"76px"}}
-
-                                    />
-                                  </div>
-                                  {/* <Input
-                                    type="text"
-                                    placeholder="Enter Flat Number"
-                                    name="flat_Number"
-                                    autoComplete="off"
-                                    value={values.flat_Number}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    style={{ width: "98%", height: "36px" }}
-                                  />
-                                </Col>
-                                <Col style={{ height: "20px" }}>
-                                  {errors.flat_Number && touched.flat_Number ? (
-                                    <p className="form-error">
-                                      {errors.flat_Number}
-                                    </p>
-                                  ) : null}*/}
-                                </Col>
-                              </Row>
+                        <Col span={24} className="w-100">
+                          <Row className=" d-flex checkBox-text-Div checkBox-text-Div-Input">
+                            <Col span={6} xs={22} sm={13} md={9} lg={7}> Is conference hall with projecter ? </Col>
+                            <Col span={18} xs={2} sm={11} md={15} lg={17}> <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
+                            // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
+                            /></Col>
+                          </Row>
+                          <Row className=" d-flex checkBox-text-Div checkBox-text-Div-Input">
+                            <Col span={6} xs={22} sm={13} md={9} lg={7}> Is conference hall with Sound System ?  </Col>
+                            <Col span={18} xs={2} sm={11} md={15} lg={17}> <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
+                            // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
+                            /></Col>
+                          </Row>
+                          <Row className=" d-flex checkBox-text-Div checkBox-text-Div-Input">
+                            <Col span={6} xs={22} sm={13} md={9} lg={7}> Is conference hall with micke ? </Col>
+                            <Col span={18} xs={2} sm={11} md={15} lg={17}> <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
+                            // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
+                            /></Col>
+                          </Row>
+                          <Row className=" d-flex checkBox-text-Div checkBox-text-Div-Input">
+                            <Col span={6} xs={22} sm={13} md={9} lg={7}>  Is conference hall with A.C ?   </Col>
+                            <Col span={18} xs={2} sm={1} md={15} lg={17}> <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
+                            // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
+                            /></Col>
+                          </Row>
+                          <Row className=" d-flex checkBox-text-Div checkBox-text-Div-Input">
+                            <Col span={6} xs={22} sm={13} md={9} lg={7}> Is conference hall with Fans ? </Col>
+                            <Col span={18} xs={2} sm={11} md={15} lg={17}> <input type="checkbox" className="checkmark " name="priorityHigh" id="priorityHigh"
+                            // onChange={checkboxfree} onClick={() => isCheckboxfree("checked")}
+                            /></Col>
+                          </Row>
+                          <Row className="mt-1">
+                            <Col span={24} >
+                            <textarea  rows="5" className="w-100" placeholder="Please give some more details about the conference hall"/>
                             </Col>
                           </Row>
                         </Col>
