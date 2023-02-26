@@ -30,7 +30,7 @@ const Showslotmodal = (props) => {
     }
 
     const bookSlotFunction = () => {
-        alert("lkjlkhl")
+        // alert("lkjlkhl")
         props.setShowAddModal(false)
     }
     console.log("showSlot", showSlot)
@@ -173,14 +173,14 @@ const Showslotmodal = (props) => {
                         </Row>
                         <Row className='mt-2'>
                             <Col span={24} >
-                                <div className='Book-Seminar-Hall-Div1'>
+                                <div className='Book-Seminar-Hall-Div1' >
                                     <Link to="/previewslot">
                                         {/* <button type="button" className="btn p-0 px-sm-2  slot-btn"
-                                    onClick={bookSlotFunction}
+                                    
                                     // onClick={companyInfoEditModal}
                                     >Book Slot</button> */}
-                                        <Commonbutton buttonText={"Book Slot"} backButton={bookSlotFunction}/>
-
+                                        <Commonbutton buttonText={"Book Slot"} buttonwidth={150} commonButton={bookSlotFunction}/>
+                                        {/* backButton={bookSlotFunction} */}
                                     </Link>
                                 </div>
                             </Col>

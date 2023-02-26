@@ -1,0 +1,94 @@
+.company-heading-tag-h11 {
+    font-weight: 700 !important;
+    font-family: serif !important;
+    color: maroon;
+}
+
+.company-heading-tag-h22 {
+    color: gray;
+    font-family: sans-serif;
+}
+.company-heading-tag-h33{
+    color: gray;
+    font-family: sans-serif;
+}
+
+.company-heading-tag-h2-tag {
+    color: gray;
+    font-family: sans-serif;
+}
+
+.Left-input-box {
+    width: 98% !important;
+}
+.new-class{
+    width: 98% !important;
+
+}
+
+.right-input-box {
+    width: 97%;
+    float: right;
+}
+
+.label-right-h6 {
+    margin-left: 18px;
+}
+
+@media (max-width:1050px) {
+    .label-right-h6 {
+        margin-left: 14px;
+    }
+}
+
+@media (max-width:900px) {
+    .label-right-h6 {
+        margin-left: 13px;
+    }
+}
+
+@media (max-width:800px) {
+    .label-right-h6 {
+        margin-left: 12px;
+    }
+
+    .company-heading-tag-h22 {
+        font-size: 25px !important;
+    }
+
+    .company-heading-tag-h33 {
+        font-size: 19px !important;
+    }
+}
+
+@media (max-width:600px) {
+    .company-heading-tag-h22 {
+        font-size: 19px !important;
+    }
+
+    .company-heading-tag-h33 {
+        font-size: 17px !important;
+    }
+    .new-class{
+        width: 98% !important;
+    }
+    .pincode-text{
+        margin-top: 10px;
+    }
+}
+
+@media (min-width:300px) and (max-width:767px) {
+    .Left-input-box {
+        width: 100% !important;
+    }
+
+    .right-input-box {
+        width: 100%;
+        float: right;
+    }
+
+    .label-right-h6 {
+        margin-top: 7px;
+        margin-left: 0px;
+    }
+}

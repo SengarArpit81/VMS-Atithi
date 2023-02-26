@@ -8,6 +8,8 @@ const Commonbutton = (props) => {
                     className="Add-Edit-btn1 text-white"
                     type="submit"
                 // onClick={addEditModalFun}
+                onClick={props.commonButton}
+                style={{width:props?.buttonwidth}}
                 >
                    {props.buttonText} 
                 </button>

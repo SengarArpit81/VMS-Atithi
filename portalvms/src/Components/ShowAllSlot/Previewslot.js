@@ -95,25 +95,25 @@ const Previewslot = (props) => {
                             {/* <hr /> */}
 
                             <Row>
-                                <Col span={24} className="d-flex justify-content-center mt-2 mb-3">
+                                <Col span={24} className="d-flex justify-content-center gap-2 align-items-center mb-2 p-0">
 
-                                    <div className="px-5">
+                                    <div className="m-0 p-0">
                                         {/* <button style={{ backgroundColor: "#720c20", border: "none", float: "right", marginRight: "20px", borderRadius: "3px" }} className="text-light px-5 fs-8 fs-sm-4 py-2"
                                         onClick={backtoSlotModalFunction}
                                         >
                                             Back
                                         </button> */}
-                                        <Commonbackbutton backButtonText={"Back"} backButton={backtoSlotModalFunction} />
+                                        <Commonbackbutton backButtonText={"Back"} backbuttonwidth={120}  backButton={backtoSlotModalFunction} />
 
 
                                     </div>
-                                    <div>
+                                    <div className='m-0 p-0'>
                                         {/* <button style={{ backgroundColor: "#720c20", border: "none", float: "right", borderRadius: "3px" }} className="text-light px-5 fs-8 fs-sm-4 py-2"
                                          onClick={paymentSlotModalFunction}
                                         >
                                             Payment
                                         </button> */}
-                                        <Commonbutton buttonText={"Payment"} />
+                                        <Commonbutton buttonText={"Payment"} buttonwidth={120} commonButton={paymentSlotModalFunction}/>
 
                                     </div>
 
